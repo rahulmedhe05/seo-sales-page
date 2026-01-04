@@ -3,42 +3,75 @@
 import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { getLeads, getLeadsStats } from "@/lib/leads"
 import { logout, getSession } from "@/lib/auth"
 import { useRouter } from "next/navigation"
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { Download, LogOut, Users, TrendingUp, Phone, MapPin, Home, IndianRupee } from "lucide-react"
+
+interface Lead {
+  id: string
+  fullName: string
+  phoneNumber: string
+  propertyType: string
+  budget: string
+  city: string
+  submittedAt: string
+}
+
+const LEADS_KEY = "interior_design_leads"
 
 export function AdminPanel() {
   const router = useRouter()
-  const [leads, setLeads] = useState<any[]>([])
-  const [stats, setStats] = useState<any>({})
+  const [leads, setLeads] = useState<Lead[]>([])
   const [selectedMonth, setSelectedMonth] = useState<string>("")
   const [session, setSession] = useState<any>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const currentSession = getSession()
-    if (!currentSession) {
-      router.push("/admin/login")
-      return
+    try {
+      const currentSession = getSession()
+      if (!currentSession) {
+        router.push("/admin/login")
+        return
+      }
+      setSession(currentSession)
+
+      // Load leads from localStorage
+      const stored = localStorage.getItem(LEADS_KEY)
+      if (stored) {
+        const data = JSON.parse(stored)
+        if (Array.isArray(data)) {
+          setLeads(data)
+        }
+      }
+
+      // Set current month
+      const now = new Date()
+      const currentMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`
+      setSelectedMonth(currentMonth)
+    } catch (error) {
+      console.error("Error loading data:", error)
+    } finally {
+      setIsLoading(false)
     }
-    setSession(currentSession)
-
-    const allLeads = getLeads()
-    setLeads(allLeads)
-
-    const leadsStats = getLeadsStats()
-    setStats(leadsStats)
-
-    const now = new Date()
-    const currentMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`
-    setSelectedMonth(currentMonth)
   }, [router])
 
   const handleLogout = () => {
     logout()
     router.push("/admin/login")
   }
+
+  // Get unique months from leads
+  const getMonths = () => {
+    const months: { [key: string]: number } = {}
+    leads.forEach((lead) => {
+      const date = new Date(lead.submittedAt)
+      const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`
+      months[monthKey] = (months[monthKey] || 0) + 1
+    })
+    return months
+  }
+
+  const months = getMonths()
 
   const filteredLeads = selectedMonth
     ? leads.filter((lead) => {
@@ -72,12 +105,7 @@ export function AdminPanel() {
     a.click()
   }
 
-  const chartData = Object.entries(stats).map(([month, count]) => ({
-    month,
-    leads: count,
-  }))
-
-  if (!session) {
+  if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center py-8">Loading...</div>
@@ -85,8 +113,13 @@ export function AdminPanel() {
     )
   }
 
-  const totalLeads = leads.length
-  const currentMonthLeads = filteredLeads.length
+  if (!session) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center py-8">Redirecting to login...</div>
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-6 p-4 md:p-6">
@@ -95,7 +128,7 @@ export function AdminPanel() {
         <div>
           <h1 className="text-2xl md:text-3xl font-bold text-foreground">Interior Design Leads</h1>
           <p className="text-sm text-muted-foreground">Manage and track all enquiry leads</p>
-          {session && <p className="text-xs text-muted-foreground mt-1">Logged in as: {session.email}</p>}
+          <p className="text-xs text-muted-foreground mt-1">Logged in as: {session.email}</p>
         </div>
         <Button onClick={handleLogout} variant="outline" className="gap-2">
           <LogOut className="w-4 h-4" />
@@ -111,7 +144,7 @@ export function AdminPanel() {
             <Users className="w-4 h-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">{totalLeads}</div>
+            <div className="text-3xl font-bold">{leads.length}</div>
             <p className="text-xs text-muted-foreground mt-1">All time enquiries</p>
           </CardContent>
         </Card>
@@ -122,30 +155,11 @@ export function AdminPanel() {
             <TrendingUp className="w-4 h-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">{currentMonthLeads}</div>
+            <div className="text-3xl font-bold">{filteredLeads.length}</div>
             <p className="text-xs text-muted-foreground mt-1">{selectedMonth}</p>
           </CardContent>
         </Card>
       </div>
-
-      {/* Chart */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Leads by Month</CardTitle>
-          <CardDescription>Monthly enquiry statistics</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={chartData}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="leads" fill="#8B4513" name="Leads" radius={[4, 4, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </CardContent>
-      </Card>
 
       {/* Month Filter and Export */}
       <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
@@ -157,9 +171,9 @@ export function AdminPanel() {
             className="px-3 py-2 border border-border rounded-md text-sm bg-background"
           >
             <option value="">All Time</option>
-            {Object.keys(stats).sort().reverse().map((month) => (
+            {Object.keys(months).sort().reverse().map((month) => (
               <option key={month} value={month}>
-                {month} ({stats[month]} leads)
+                {month} ({months[month]} leads)
               </option>
             ))}
           </select>

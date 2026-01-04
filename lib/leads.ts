@@ -5,12 +5,11 @@ export interface Lead {
   propertyType: string
   budget: string
   city: string
-  preference: string
   submittedAt: string
 }
 
 // Store leads in localStorage
-const LEADS_KEY = "royal_safa_leads"
+const LEADS_KEY = "interior_design_leads"
 
 export const getLeads = (): Lead[] => {
   if (typeof window === "undefined") return []
@@ -18,8 +17,7 @@ export const getLeads = (): Lead[] => {
     const stored = localStorage.getItem(LEADS_KEY)
     if (!stored) return []
     const data = JSON.parse(stored)
-    // Filter to only include leads with new format (fullName field)
-    return Array.isArray(data) ? data.filter((lead: any) => lead.fullName) : []
+    return Array.isArray(data) ? data : []
   } catch (error) {
     console.error("Error reading leads:", error)
     return []
@@ -28,15 +26,23 @@ export const getLeads = (): Lead[] => {
 
 export const addLead = (lead: Omit<Lead, "id" | "submittedAt">): Lead => {
   const newLead: Lead = {
-    ...lead,
     id: Date.now().toString(),
+    fullName: lead.fullName || "",
+    phoneNumber: lead.phoneNumber || "",
+    propertyType: lead.propertyType || "",
+    budget: lead.budget || "",
+    city: lead.city || "",
     submittedAt: new Date().toISOString(),
   }
 
   if (typeof window !== "undefined") {
-    const leads = getLeads()
-    leads.push(newLead)
-    localStorage.setItem(LEADS_KEY, JSON.stringify(leads))
+    try {
+      const leads = getLeads()
+      leads.push(newLead)
+      localStorage.setItem(LEADS_KEY, JSON.stringify(leads))
+    } catch (error) {
+      console.error("Error saving lead:", error)
+    }
   }
 
   return newLead
