@@ -89,20 +89,20 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://localseoservices.com/#organization",
-        name: "Local SEO Services",
-        image: "https://localseoservices.com/logo.png",
-        description: "Local SEO services for businesses. One-time investment, pay after ranking. Specializing in website SEO and local search optimization.",
-        url: "https://localseoservices.com",
+        "@id": "https://goplnr.com/#organization",
+        name: "GoPlnr - Local SEO Services",
+        image: "https://goplnr.com/logo.png",
+        description: "First get ranked on Google, then pay. ₹0 upfront. Local SEO services for all businesses. Website SEO and local search optimization.",
+        url: "https://goplnr.com",
         telephone: "+916353583148",
-        email: "hello@localseo.com",
+        email: "hello@goplnr.com",
         address: {
           "@type": "PostalAddress",
           addressCountry: "IN",
         },
         sameAs: [
-          "https://www.facebook.com/localseoservices",
-          "https://www.instagram.com/localseoservices",
+          "https://www.facebook.com/goplnr",
+          "https://www.instagram.com/goplnr",
         ],
         priceRange: "₹₹",
         serviceArea: {
@@ -112,11 +112,11 @@ export default function RootLayout({
       },
       {
         "@type": "Service",
-        "@id": "https://localseoservices.com/#service-localseo",
-        name: "Local SEO Services",
-        description: "Complete local SEO package including website SEO, local citations, backlink building, and Google Maps ranking. Pay after ranking.",
+        "@id": "https://goplnr.com/#service-localseo",
+        name: "GoPlnr Local SEO Services",
+        description: "Complete local SEO package including website SEO, local citations, backlink building, and Google Maps ranking. First get ranked, then pay.",
         provider: {
-          "@id": "https://localseoservices.com/#organization",
+          "@id": "https://goplnr.com/#organization",
         },
         areaServed: "India",
         offers: {
@@ -128,10 +128,10 @@ export default function RootLayout({
       },
       {
         "@type": "AggregateRating",
-        "@id": "https://localseoservices.com/#rating",
+        "@id": "https://goplnr.com/#rating",
         itemReviewed: {
           "@type": "LocalBusiness",
-          "@id": "https://localseoservices.com/#organization",
+          "@id": "https://goplnr.com/#organization",
         },
         ratingValue: "4.9",
         ratingCount: "50",
