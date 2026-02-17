@@ -5,6 +5,12 @@ import { startSession, heartbeat, endSession, trackPageView, getCurrentSessionId
 
 export function AnalyticsTracker() {
   useEffect(() => {
+    // Don't track admin pages
+    const path = window.location.pathname
+    if (path.startsWith("/analytics") || path.startsWith("/leads")) {
+      return
+    }
+
     // Start session if not already started
     let sessionId = getCurrentSessionId()
     if (!sessionId) {
@@ -12,7 +18,7 @@ export function AnalyticsTracker() {
     }
 
     // Track initial page view
-    trackPageView(window.location.pathname)
+    trackPageView(path)
 
     // Heartbeat every 10 seconds
     const heartbeatInterval = setInterval(() => {
