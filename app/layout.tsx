@@ -13,9 +13,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GoPlnr | First Get Ranked on Google, Then Pay - Zero Upfront Fees",
+  title: "GoPlnr | First Get Ranked on Google, Then Pay - Local SEO Services",
   description:
-    "First get ranked on Google's first page, then pay us. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees. Local SEO for all businesses.",
+    "First get ranked on Google's first page, then pay us. No upfront fees. Local SEO for all businesses — Google Maps ranking, website SEO & local search optimization.",
   keywords:
     "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GoPlnr | First Get Ranked on Google, Then Pay",
     description:
-      "First get ranked, then pay. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees.",
+      "First get ranked on Google, then pay. No upfront fees. Local SEO services for all businesses across India.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GoPlnr | First Get Ranked, Then Pay",
-    description: "First get ranked on Google, then pay. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees!",
+    description: "First get ranked on Google, then pay. No upfront fees. Local SEO services for all businesses across India.",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
