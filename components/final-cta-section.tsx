@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Phone, MessageCircle, ArrowRight, CheckCircle2, Upload, AlertTriangle } from "lucide-react"
+import { Phone, MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react"
 import { addLead } from "@/lib/leads"
 
 export function FinalCTASection() {
@@ -14,15 +14,7 @@ export function FinalCTASection() {
     businessCategory: "",
     location: "",
     websiteUrl: "",
-    paymentScreenshot: null as File | null,
   })
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (file) {
-      setFormData({ ...formData, paymentScreenshot: file })
-    }
-  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -35,11 +27,10 @@ export function FinalCTASection() {
       businessCategory: formData.businessCategory,
       location: formData.location,
       websiteUrl: formData.websiteUrl,
-      paymentScreenshot: formData.paymentScreenshot?.name || "",
     })
 
     const message = `
-🚀 *LOCAL SEO ENQUIRY - DEPOSIT PAID* 🚀
+🚀 *LOCAL SEO ENQUIRY - PAY AFTER RANKING* 🚀
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
@@ -47,7 +38,8 @@ export function FinalCTASection() {
 • *Business Category:* ${formData.businessCategory}
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
-• *Payment Screenshot:* ${formData.paymentScreenshot ? "Attached" : "Will share separately"}
+
+💰 Pay ₹25,000 only AFTER we rank you!
 
 ―――――――――――――
 _Sent via GoPlnr Website_
@@ -78,9 +70,9 @@ _Sent via GoPlnr Website_
               
               <div className="space-y-4">
                 {[
-                  "Pay just ₹1,000 deposit TODAY",
-                  "Pay ₹24,000 ONLY after we rank you",
-                  "No ranking = Full ₹1,000 refund",
+                  "₹0 upfront — totally pay later!",
+                  "Pay ₹25,000 ONLY after we rank you",
+                  "No ranking = No payment",
                   "Google Maps & Search ranking in 15-30 days",
                   "Free website redesign if needed",
                   "Zero risk - We take all the risk!",
@@ -118,11 +110,11 @@ _Sent via GoPlnr Website_
 
             {/* Right - Form */}
             <div className="bg-white rounded-2xl p-6 shadow-2xl">
-              {/* Serious Enquiries Warning */}
-              <div className="bg-amber-50 border border-amber-300 rounded-lg p-3 mb-4 flex items-start gap-2">
-                <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-amber-800 font-medium">
-                  Serious enquiries only. Please pay ₹1,000 deposit before submitting.
+              {/* Pay Later Banner */}
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-4 flex items-start gap-2">
+                <span className="text-green-600 flex-shrink-0 mt-0.5">✅</span>
+                <p className="text-sm text-green-800 font-medium">
+                  No payment required now. We do the SEO first, you pay only after seeing results!
                 </p>
               </div>
 
@@ -131,22 +123,8 @@ _Sent via GoPlnr Website_
                   Start Your SEO Journey
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Pay ₹1,000 deposit • 100% refundable if no results
+                  100% Pay Later • Pay ₹25,000 only after we rank you
                 </p>
-              </div>
-
-              {/* QR Code Placeholder */}
-              <div className="bg-muted rounded-lg p-4 mb-4">
-                <div className="flex flex-col sm:flex-row items-center gap-4">
-                  <div className="w-24 h-24 bg-white border-2 border-dashed border-border rounded-lg flex items-center justify-center">
-                    <span className="text-xs text-muted-foreground text-center">QR Code<br/>Here</span>
-                  </div>
-                  <div className="text-center sm:text-left">
-                    <p className="font-semibold text-foreground">Pay ₹1,000 Deposit</p>
-                    <p className="text-sm text-muted-foreground">UPI: 8128454804@indie</p>
-                    <p className="text-xs text-accent mt-1">Fully refundable if no ranking in 30 days</p>
-                  </div>
-                </div>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -239,35 +217,13 @@ _Sent via GoPlnr Website_
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="ctaPaymentScreenshot" className="block text-sm font-medium text-foreground mb-1">
-                    Payment Screenshot <span className="text-destructive">*</span>
-                  </label>
-                  <div className="relative">
-                    <input
-                      id="ctaPaymentScreenshot"
-                      type="file"
-                      accept="image/*"
-                      onChange={handleFileChange}
-                      required
-                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                    />
-                    <div className="flex items-center gap-2 bg-muted border border-border rounded-md px-3 py-2.5 h-11">
-                      <Upload className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm text-muted-foreground truncate">
-                        {formData.paymentScreenshot ? formData.paymentScreenshot.name : "Upload payment screenshot"}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-semibold h-12 text-base mt-2">
                   <ArrowRight className="w-5 h-5 mr-2" />
                   Submit & Start SEO
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground pt-2">
-                  🔒 Your deposit is fully refundable if we don't rank you in 30 days.
+                  🔒 Pay after ranking. No ranking = No payment.
                 </p>
               </form>
             </div>

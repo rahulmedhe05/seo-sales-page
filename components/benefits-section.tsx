@@ -15,8 +15,8 @@ const benefits = [
   {
     icon: IndianRupee,
     title: "Pay ₹25K Only AFTER Ranking",
-    description: "Just ₹1,000 deposit today. We work, we rank you, THEN you pay the balance. No ranking? Get full refund!",
-    highlight: "Zero Risk Payment",
+    description: "₹0 upfront. We do the SEO first, rank you on Google, THEN you pay. No ranking? No payment!",
+    highlight: "100% Pay Later",
     color: "bg-green-500",
   },
   {
@@ -29,8 +29,8 @@ const benefits = [
   {
     icon: ShieldCheck,
     title: "100% Money-Back Guarantee",
-    description: "If we don't rank you in 30 days, you don't pay ₹25,000 AND we return your ₹1,000 deposit. You lose nothing!",
-    highlight: "₹1,000 Refund Guaranteed",
+    description: "If we don't rank you, you don't pay ₹25,000. Zero risk — we take all the risk, not you!",
+    highlight: "No Ranking = No Payment",
     color: "bg-purple-500",
   },
   {

@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "GoPlnr | First Get Ranked on Google, Then Pay - Zero Upfront Fees",
   description:
-    "First get ranked on Google's first page, then pay us. Just ₹1,000 refundable deposit. Pay ₹24,000 only after ranking. No upfront fees. 30-day guarantee. Local SEO for all businesses.",
+    "First get ranked on Google's first page, then pay us. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees. Local SEO for all businesses.",
   keywords:
     "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GoPlnr | First Get Ranked on Google, Then Pay",
     description:
-      "First get ranked, then pay. Just ₹1,000 deposit. Pay ₹24,000 only after ranking. Zero upfront fees. 30-day guarantee.",
+      "First get ranked, then pay. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GoPlnr | First Get Ranked, Then Pay",
-    description: "First get ranked on Google, then pay. ₹1,000 deposit. Pay ₹24,000 only after ranking. Zero upfront fees!",
+    description: "First get ranked on Google, then pay. ₹0 upfront. Pay ₹25,000 only after we rank you. Zero upfront fees!",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
@@ -91,7 +91,7 @@ export default function RootLayout({
         "@id": "https://localseoservices.com/#organization",
         name: "Local SEO Services",
         image: "https://localseoservices.com/logo.png",
-        description: "Local SEO services for businesses. One-time investment, pay after ranking. Specializing in website SEO and local search optimization. 30-day ranking guarantee.",
+        description: "Local SEO services for businesses. One-time investment, pay after ranking. Specializing in website SEO and local search optimization.",
         url: "https://localseoservices.com",
         telephone: "+916353583148",
         email: "hello@localseo.com",
@@ -113,7 +113,7 @@ export default function RootLayout({
         "@type": "Service",
         "@id": "https://localseoservices.com/#service-localseo",
         name: "Local SEO Services",
-        description: "Complete local SEO package including website SEO, local citations, backlink building, and Google Maps ranking. 30-day guarantee.",
+        description: "Complete local SEO package including website SEO, local citations, backlink building, and Google Maps ranking. Pay after ranking.",
         provider: {
           "@id": "https://localseoservices.com/#organization",
         },
@@ -122,7 +122,7 @@ export default function RootLayout({
           "@type": "Offer",
           price: "25000",
           priceCurrency: "INR",
-          description: "One-time Local SEO package - Pay after ranking - 30 day guarantee",
+          description: "One-time Local SEO package - Pay after ranking - No ranking no payment",
         },
       },
       {

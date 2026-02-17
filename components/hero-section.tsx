@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { TrendingUp, CheckCircle2, Shield, MessageCircle, Upload, Clock, Zap, AlertTriangle } from "lucide-react"
+import { TrendingUp, CheckCircle2, Shield, MessageCircle, Clock, Zap, AlertTriangle } from "lucide-react"
 import { addLead } from "@/lib/leads"
 
 export function HeroSection() {
@@ -15,17 +15,6 @@ export function HeroSection() {
     location: "",
     websiteUrl: "",
   })
-  const [paymentScreenshot, setPaymentScreenshot] = useState<File | null>(null)
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null)
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (file) {
-      setPaymentScreenshot(file)
-      const url = URL.createObjectURL(file)
-      setPreviewUrl(url)
-    }
-  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -38,11 +27,10 @@ export function HeroSection() {
       businessCategory: formData.businessCategory,
       location: formData.location,
       websiteUrl: formData.websiteUrl,
-      paymentScreenshot: paymentScreenshot?.name || "",
     })
 
     const message = `
-🚀 *LOCAL SEO ENQUIRY - PAID DEPOSIT* 🚀
+🚀 *LOCAL SEO ENQUIRY - PAY AFTER RANKING* 🚀
 
 • *Full Name:* ${formData.fullName}
 • *Mobile Number:* ${formData.phoneNumber}
@@ -50,9 +38,8 @@ export function HeroSection() {
 • *Business Category:* ${formData.businessCategory}
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
-• *Payment Screenshot:* ${paymentScreenshot ? "Attached" : "Not attached"}
 
-💰 ₹1000 Deposit Paid
+💰 Pay ₹25,000 only AFTER we rank you!
 
 ―――――――――――――
 _Sent via GoPlnr Website_
@@ -92,9 +79,9 @@ _Sent via GoPlnr Website_
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              Just <span className="text-accent font-bold text-2xl md:text-3xl">₹1,000</span> refundable deposit.
-              <span className="font-bold"> See results first. Pay ₹24,000 only after ranking. </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">No ranking = Full refund!</span>
+              <span className="text-accent font-bold text-2xl md:text-3xl">₹0 Upfront.</span> We do the SEO first.
+              <span className="font-bold"> Pay ₹25,000 only AFTER we rank you on Google. </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">No ranking = You don't pay!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
@@ -106,8 +93,8 @@ _Sent via GoPlnr Website_
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
                   <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
                   <div>
-                    <p className="font-bold">Pay just ₹1,000 deposit NOW</p>
-                    <p className="text-sm text-white/80">That's all you pay today to start</p>
+                    <p className="font-bold">Submit your business details</p>
+                    <p className="text-sm text-white/80">Takes 2 minutes — zero payment needed</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
@@ -120,8 +107,8 @@ _Sent via GoPlnr Website_
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
                   <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
                   <div>
-                    <p className="font-bold">Pay ₹24,000 balance ONLY after ranking</p>
-                    <p className="text-sm text-white/80">No ranking? Full ₹1,000 refund!</p>
+                    <p className="font-bold">Pay ₹25,000 ONLY after you see results</p>
+                    <p className="text-sm text-white/80">No ranking = You don't pay a single rupee!</p>
                   </div>
                 </div>
               </div>
@@ -226,36 +213,17 @@ _Sent via GoPlnr Website_
                   Start Your Ranking Journey
                 </div>
                 <h3 className="text-lg font-bold text-foreground">
-                  Pay ₹1,000 Deposit to Begin
+                  100% Pay Later — After SEO Results!
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
-                  100% refundable if we don&apos;t deliver results
+                  Pay ₹25,000 only after we rank you
                 </p>
               </div>
 
-              {/* Payment QR Section */}
-              <div className="bg-muted rounded-lg p-4 mb-4">
-                <p className="text-sm font-bold text-center text-foreground mb-3">Scan QR to Pay ₹1,000 Deposit</p>
-                <div className="flex justify-center mb-3">
-                  {/* QR Code Placeholder */}
-                  <div className="w-32 h-32 bg-white border-2 border-dashed border-primary/30 rounded-lg flex items-center justify-center overflow-hidden">
-                    <img 
-                      src="/qr-code.png" 
-                      alt="Payment QR Code" 
-                      width={120} 
-                      height={120}
-                      className="rounded object-contain"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement
-                        target.style.display = 'none'
-                        target.nextElementSibling?.classList.remove('hidden')
-                      }}
-                    />
-                    <p className="text-xs text-muted-foreground hidden">QR Code</p>
-                  </div>
-                </div>
-                <p className="text-center text-sm font-medium text-foreground">UPI ID: <span className="text-primary font-bold">8128454804@indie</span></p>
-                <p className="text-center text-xs text-muted-foreground mt-1">Amount: ₹1,000 (Fully Refundable)</p>
+              {/* Pay Later Banner */}
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                <p className="text-sm font-bold text-center text-green-800">✅ No payment required now!</p>
+                <p className="text-xs text-center text-green-700 mt-1">We do the work first. You pay ₹25,000 only after we rank you.</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -348,41 +316,13 @@ _Sent via GoPlnr Website_
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="paymentScreenshot" className="block text-sm font-medium text-foreground mb-1">
-                    7️⃣ Payment Screenshot <span className="text-destructive">*</span>
-                  </label>
-                  <div className="relative">
-                    <input
-                      id="paymentScreenshot"
-                      type="file"
-                      accept="image/*"
-                      onChange={handleFileChange}
-                      required
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="paymentScreenshot"
-                      className="flex items-center justify-center gap-2 w-full bg-muted border-2 border-dashed border-primary/30 text-foreground rounded-md px-3 py-3 cursor-pointer hover:bg-muted/80 transition-colors"
-                    >
-                      <Upload className="w-5 h-5 text-primary" />
-                      <span className="text-sm">{paymentScreenshot ? paymentScreenshot.name : "Upload payment screenshot"}</span>
-                    </label>
-                    {previewUrl && (
-                      <div className="mt-2">
-                        <img src={previewUrl} alt="Payment preview" className="w-20 h-20 object-cover rounded border" />
-                      </div>
-                    )}
-                  </div>
-                </div>
-
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 text-base mt-3">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Send on WhatsApp →
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  🔒 100% Secure | Deposit refundable if no results
+                  🔒 100% Pay Later | No ranking = No payment
                 </p>
               </form>
             </div>

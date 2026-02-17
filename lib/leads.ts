@@ -8,7 +8,6 @@ export interface Lead {
   businessCategory: string
   location: string
   websiteUrl: string
-  paymentScreenshot: string
   status: LeadStatus
   submittedAt: string
 }
@@ -41,7 +40,6 @@ export const addLead = (lead: Omit<Lead, "id" | "submittedAt" | "status">): Lead
     businessCategory: lead.businessCategory || "",
     location: lead.location || "",
     websiteUrl: lead.websiteUrl || "",
-    paymentScreenshot: lead.paymentScreenshot || "",
     status: "new",
     submittedAt: new Date().toISOString(),
   }

@@ -5,8 +5,8 @@ import { Award, Users, HandshakeIcon, Target, Clock } from "lucide-react"
 const trustPoints = [
   {
     icon: Target,
-    title: "30-Day Guarantee",
-    description: "We're so confident in our work — if you don't rank in 30 days, we refund your full ₹1000 deposit. Zero risk.",
+    title: "Pay After Ranking",
+    description: "We're so confident in our work — if we don't rank you, you don't pay. Zero upfront, zero risk.",
   },
   {
     icon: Users,
@@ -64,7 +64,7 @@ export function TrustSection() {
           <div className="bg-card rounded-2xl p-6 md:p-8 border border-border text-center">
             <div className="text-4xl mb-4">"</div>
             <p className="text-lg md:text-xl text-foreground italic mb-6">
-              I was paying ₹8,000/month to an agency for 6 months with no results. These guys got me ranking on Google Maps in just 15 days — and I only paid after I saw myself on the first page. The 30-day guarantee gave me confidence to try them.
+              I was paying ₹8,000/month to an agency for 6 months with no results. These guys got me ranking on Google Maps in just 15 days — and I only paid after I saw myself on the first page. The pay-after-ranking model gave me confidence to try them.
             </p>
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { Download, LogOut, Phone, User, Building, MapPin, FileImage, Calendar, Briefcase, Globe } from 'lucide-react'
+import { Download, LogOut, Phone, User, Building, MapPin, Calendar, Briefcase, Globe } from 'lucide-react'
 
 const EMAIL = 'dailyleads@gmail.com'
 const PASSWORD = 'DLead@7890'
@@ -17,7 +17,6 @@ interface Lead {
   businessCategory: string
   location: string
   websiteUrl: string
-  paymentScreenshot: string
   status?: string
   submittedAt: string
 }
@@ -83,7 +82,7 @@ export default function LeadsPage() {
   }
 
   const exportCSV = () => {
-    const headers = ['Full Name', 'Phone', 'Business Name', 'Category', 'Location', 'Website', 'Payment Screenshot', 'Status', 'Date']
+    const headers = ['Full Name', 'Phone', 'Business Name', 'Category', 'Location', 'Website', 'Status', 'Date']
     const rows = leads.map(l => [
       l.fullName || '',
       l.phoneNumber || '',
@@ -91,7 +90,6 @@ export default function LeadsPage() {
       l.businessCategory || '',
       l.location || '',
       l.websiteUrl || '',
-      l.paymentScreenshot || '',
       l.status || 'new',
       new Date(l.submittedAt).toLocaleDateString()
     ])
@@ -234,9 +232,6 @@ export default function LeadsPage() {
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">
                     <div className="flex items-center gap-2"><Globe className="w-4 h-4" /> Website</div>
                   </th>
-                  <th className="text-left py-3 px-4 font-semibold text-gray-700">
-                    <div className="flex items-center gap-2"><FileImage className="w-4 h-4" /> Payment</div>
-                  </th>
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">Status</th>
                   <th className="text-left py-3 px-4 font-semibold text-gray-700">
                     <div className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Date</div>
@@ -267,17 +262,6 @@ export default function LeadsPage() {
                           </a>
                         ) : (
                           <span className="text-gray-400 text-xs">No website</span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4">
-                        {lead.paymentScreenshot ? (
-                          <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">
-                            ✅ Uploaded
-                          </span>
-                        ) : (
-                          <span className="bg-gray-100 text-gray-500 px-2 py-1 rounded text-xs">
-                            None
-                          </span>
                         )}
                       </td>
                       <td className="py-3 px-4">

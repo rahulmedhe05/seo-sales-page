@@ -16,7 +16,7 @@ export function Footer() {
               <h3 className="text-xl font-bold">GoPlnr</h3>
             </div>
             <p className="text-white/70 leading-relaxed">
-              First get ranked on Google, then pay. Zero upfront fees. 30-day guarantee.
+              First get ranked on Google, then pay. Zero upfront fees. Pay only after ranking.
             </p>
             <div className="flex gap-3">
               <a

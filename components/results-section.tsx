@@ -33,9 +33,9 @@ const results = [
 ]
 
 const stats = [
-  { number: "₹1K", label: "Deposit to Start", icon: Target },
+  { number: "₹0", label: "Pay Upfront", icon: Target },
   { number: "15-30", label: "Days to Rank", icon: TrendingUp },
-  { number: "₹24K", label: "Pay After Ranking", icon: Award },
+  { number: "₹25K", label: "Pay After Ranking", icon: Award },
   { number: "₹0", label: "If No Results", icon: BarChart3 },
 ]
 
@@ -108,10 +108,10 @@ export function ResultsSection() {
         {/* Bottom Note */}
         <div className="mt-12 text-center">
           <p className="text-white/90 text-lg">
-            <span className="text-accent font-bold">Your business could be next.</span> Pay ₹1,000 today, ₹24,000 only after ranking.
+            <span className="text-accent font-bold">Your business could be next.</span> ₹0 upfront — pay ₹25,000 only after we rank you!
           </p>
           <p className="text-white/70 text-base mt-2">
-            No ranking? Get full ₹1,000 refund. Zero risk!
+            No ranking? You don't pay a single rupee!
           </p>
         </div>
       </div>

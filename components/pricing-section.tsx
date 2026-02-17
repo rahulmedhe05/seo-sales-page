@@ -62,7 +62,7 @@ export function PricingSection() {
             <div className="bg-primary text-white p-6 text-center pt-8">
               <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-1.5 text-sm font-bold mb-3 animate-pulse">
                 <Shield className="w-4 h-4" />
-                30 Day Ranking Guarantee
+                Pay After Ranking Guarantee
               </div>
               <h3 className="text-2xl font-bold mb-2">Local SEO Package</h3>
               <p className="text-white/80">Complete Local SEO for Any Business in India</p>
@@ -82,20 +82,20 @@ export function PricingSection() {
               
               {/* Payment Steps */}
               <div className="mt-6 space-y-3 text-left">
-                <div className="bg-accent text-white rounded-xl p-4">
+                <div className="bg-green-500 text-white rounded-xl p-4">
                   <p className="text-xs uppercase tracking-wider mb-1">Pay Today</p>
-                  <p className="text-2xl font-bold">₹1,000 only</p>
-                  <p className="text-sm text-white/80">Refundable deposit to start work</p>
+                  <p className="text-2xl font-bold">₹0 — Nothing!</p>
+                  <p className="text-sm text-white/80">We start working on your SEO right away</p>
                 </div>
                 <div className="bg-muted rounded-xl p-4">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Pay After Ranking</p>
-                  <p className="text-2xl font-bold text-foreground">₹24,000</p>
-                  <p className="text-sm text-muted-foreground">Only when you see results!</p>
+                  <p className="text-2xl font-bold text-foreground">₹25,000</p>
+                  <p className="text-sm text-muted-foreground">Only when you see results on Google!</p>
                 </div>
               </div>
               
               <div className="mt-4 p-3 bg-red-50 rounded-lg border border-red-200">
-                <p className="text-sm font-bold text-red-700">🔒 No Ranking = No Payment + Full ₹1,000 Refund</p>
+                <p className="text-sm font-bold text-red-700">🔒 No Ranking = No Payment!</p>
               </div>
             </div>
 
@@ -140,15 +140,15 @@ export function PricingSection() {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
               <Shield className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-foreground">₹1,000 Today Only</h4>
-            <p className="text-sm text-muted-foreground">₹24,000 after we rank you</p>
+            <h4 className="font-bold text-foreground">₹0 Upfront — Pay Later!</h4>
+            <p className="text-sm text-muted-foreground">₹25,000 after we rank you</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
               <Zap className="w-6 h-6" />
             </div>
             <h4 className="font-bold text-foreground">No Ranking = No Payment</h4>
-            <p className="text-sm text-muted-foreground">Plus full ₹1,000 refund</p>
+            <p className="text-sm text-muted-foreground">You don't pay a single rupee</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
