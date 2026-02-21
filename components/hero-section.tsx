@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { TrendingUp, CheckCircle2, Shield, MessageCircle, Clock, Zap, AlertTriangle } from "lucide-react"
+import { TrendingUp, CheckCircle2, Shield, MessageCircle, Clock, Zap } from "lucide-react"
 import { addLead } from "@/lib/leads"
 
 export function HeroSection() {
@@ -30,7 +30,7 @@ export function HeroSection() {
     })
 
     const message = `
-🚀 *LOCAL SEO ENQUIRY - PAY AFTER RANKING* 🚀
+🚀 *FREE 1 MONTH SEO TRIAL ENQUIRY* 🚀
 
 • *Full Name:* ${formData.fullName}
 • *Mobile Number:* ${formData.phoneNumber}
@@ -39,7 +39,8 @@ export function HeroSection() {
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
 
-💰 Pay ₹25,000 only AFTER we rank you!
+🎁 FREE 1 Month SEO Trial - Rank in My City!
+💰 Then ₹20,000/Quarter (100% Advance)
 
 ―――――――――――――
 _Sent via GoPlnr Website_
@@ -66,66 +67,65 @@ _Sent via GoPlnr Website_
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 font-bold animate-pulse">
               <Zap className="w-5 h-5" />
-              <span className="text-sm">🔥 FIRST GET RANKED, THEN PAY!</span>
+              <span className="text-sm">🎁 FREE 1 MONTH SEO TRIAL - LIMITED OFFER!</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              First Get Ranked on
-              <span className="text-accent"> Google&apos;s First Page</span>
+              Get <span className="text-accent">FREE SEO for 1 Month</span>
               <br />
-              <span className="text-2xl sm:text-3xl md:text-4xl">Then Pay Us. Zero Upfront Fees!</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl">Rank in Your City — Risk Free!</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              <span className="text-accent font-bold text-2xl md:text-3xl">₹0 Upfront.</span> We do the SEO first.
-              <span className="font-bold"> Pay ₹25,000 only AFTER we rank you on Google. </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">No ranking = You don't pay!</span>
+              <span className="text-accent font-bold text-2xl md:text-3xl">100% FREE Trial.</span> We rank your business on Google in your city.
+              <span className="font-bold"> Then just ₹20,000/Quarter to dominate local search! </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">Try Before You Pay!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
             <div className="bg-accent/20 backdrop-blur-sm rounded-xl p-5 border-2 border-accent">
               <h3 className="text-xl font-bold mb-4 text-center text-accent">
-                🎯 HOW IT WORKS - ZERO RISK!
+                � FREE 1 MONTH TRIAL - HOW IT WORKS
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                  <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                  <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
                   <div>
                     <p className="font-bold">Submit your business details</p>
-                    <p className="text-sm text-white/80">Takes 2 minutes — zero payment needed</p>
+                    <p className="text-sm text-white/80">Takes 2 minutes — 100% FREE to start!</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                  <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                  <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
                   <div>
-                    <p className="font-bold">We rank you on Google in 15-30 days</p>
-                    <p className="text-sm text-white/80">Watch your business climb to page 1</p>
+                    <p className="font-bold">FREE SEO for 1 Full Month</p>
+                    <p className="text-sm text-white/80">We rank your business in your city — no charges!</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
                   <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
                   <div>
-                    <p className="font-bold">Pay ₹25,000 ONLY after you see results</p>
-                    <p className="text-sm text-white/80">No ranking = You don't pay a single rupee!</p>
+                    <p className="font-bold">Continue with ₹20,000/Quarter</p>
+                    <p className="text-sm text-white/80">Love the results? Subscribe quarterly (100% advance)</p>
                   </div>
                 </div>
               </div>
               <div className="mt-4 text-center bg-yellow-400 rounded-lg p-2">
-                <p className="font-bold text-gray-900">⚡ You literally can't lose money!</p>
+                <p className="font-bold text-gray-900">⚡ Try FREE for 1 Month — Zero Risk!</p>
               </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-4">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">30</div>
-                <div className="text-sm text-white/70">Days to Rank</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">1 Month</div>
+                <div className="text-sm text-white/70">FREE Trial</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">Zero</div>
-                <div className="text-sm text-white/70">Monthly Fees</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">₹20K</div>
+                <div className="text-sm text-white/70">Per Quarter</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-accent">100%</div>
@@ -194,14 +194,14 @@ _Sent via GoPlnr Website_
           {/* Right Side - Lead Form */}
           <div className="md:col-span-2">
             <div className="bg-white rounded-2xl p-5 md:p-6 shadow-2xl border-4 border-accent">
-              {/* Warning Banner */}
-              <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+              {/* FREE Trial Banner */}
+              <div className="bg-green-50 border-2 border-green-400 rounded-lg p-3 mb-4">
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="text-2xl">🎁</div>
                   <div>
-                    <p className="text-amber-800 text-sm font-bold">⚠️ SERIOUS ENQUIRIES ONLY</p>
-                    <p className="text-amber-700 text-xs mt-1">
-                      Only fill this form if you&apos;re ready to start. We invest real time in each client. Please don&apos;t enquire if you&apos;re just asking around.
+                    <p className="text-green-800 text-sm font-bold">FREE 1 MONTH SEO TRIAL!</p>
+                    <p className="text-green-700 text-xs mt-1">
+                      Get ranked in your city for FREE. No payment needed to start. Limited time offer!
                     </p>
                   </div>
                 </div>
@@ -210,20 +210,21 @@ _Sent via GoPlnr Website_
               <div className="text-center mb-4">
                 <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-3 py-1 text-sm font-bold mb-2">
                   <Clock className="w-4 h-4" />
-                  Start Your Ranking Journey
+                  Start Your FREE Trial
                 </div>
                 <h3 className="text-lg font-bold text-foreground">
-                  100% Pay Later — After SEO Results!
+                  🚀 Rank in Your City — FREE for 1 Month!
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Pay ₹25,000 only after we rank you
+                  Then ₹20,000/Quarter (100% Advance)
                 </p>
               </div>
 
-              {/* Pay Later Banner */}
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
-                <p className="text-sm font-bold text-center text-green-800">✅ No payment required now!</p>
-                <p className="text-xs text-center text-green-700 mt-1">We do the work first. You pay ₹25,000 only after we rank you.</p>
+              {/* Pricing Banner */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                <p className="text-sm font-bold text-center text-blue-800">🎯 Special Quarterly Package</p>
+                <p className="text-xl font-bold text-center text-blue-900 mt-1">₹20,000/Quarter</p>
+                <p className="text-xs text-center text-blue-700 mt-1">After FREE 1 Month Trial • 100% Advance Payment</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -318,13 +319,40 @@ _Sent via GoPlnr Website_
 
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 text-base mt-3">
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Send on WhatsApp →
+                  Start FREE Trial →
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  🔒 100% Pay Later | No ranking = No payment
+                  🎁 1 Month FREE | Then ₹20,000/Quarter
                 </p>
               </form>
+
+              {/* Important Notes Section */}
+              <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <p className="text-sm font-bold text-amber-800 mb-2">📋 Important Notes:</p>
+                <ul className="space-y-2 text-xs text-amber-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent font-bold">✓</span>
+                    <span><strong>1 Month FREE Trial</strong> — No payment required to start</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent font-bold">✓</span>
+                    <span><strong>Quarterly Package:</strong> ₹20,000 per quarter after trial</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent font-bold">✓</span>
+                    <span><strong>100% Advance Payment</strong> required for quarterly subscription</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent font-bold">✓</span>
+                    <span>Rank in your city with local SEO optimization</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent font-bold">✓</span>
+                    <span>Cancel anytime — No long-term commitment required</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

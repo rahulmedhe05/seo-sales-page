@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export function PricingSection() {
   const handleCTAClick = () => {
-    const whatsappURL = `https://wa.me/916353583148?text=${encodeURIComponent("Hi! I'm interested in your Local SEO service for ₹25,000. Please share more details.")}`
+    const whatsappURL = `https://wa.me/916353583148?text=${encodeURIComponent("Hi! I'm interested in the FREE 1 Month SEO Trial + ₹20,000/Quarter package. Please share more details.")}`
     window.open(whatsappURL, "_blank")
   }
 
@@ -13,12 +13,12 @@ export function PricingSection() {
     <section id="pricing" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="text-accent font-semibold uppercase tracking-wider mb-3 text-sm">Transparent Pricing</p>
+          <p className="text-accent font-semibold uppercase tracking-wider mb-3 text-sm">🎁 Limited Time Offer</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
-            One-Time Investment. Long-Term Results.
+            FREE SEO for 1 Month + ₹20,000/Quarter
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            No hidden charges. No monthly fees. No surprises.
+            Try our SEO FREE for 1 month. Love the results? Continue at just ₹20,000/Quarter!
           </p>
         </div>
 
@@ -49,8 +49,72 @@ export function PricingSection() {
           </div>
         </div>
 
-        {/* Pricing Card */}
-        <div className="max-w-lg mx-auto">
+        {/* Pricing Cards */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          
+          {/* FREE Trial Card */}
+          <div className="bg-card rounded-2xl border-4 border-green-500 shadow-2xl overflow-visible relative mt-6">
+            {/* FREE Badge */}
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg flex items-center gap-2 z-10">
+              🎁 FREE TRIAL
+            </div>
+            
+            {/* Header */}
+            <div className="bg-green-600 text-white p-6 text-center pt-8">
+              <div className="inline-flex items-center gap-2 bg-green-400 rounded-full px-4 py-1.5 text-sm font-bold mb-3 animate-pulse">
+                <Shield className="w-4 h-4" />
+                No Payment Required!
+              </div>
+              <h3 className="text-2xl font-bold mb-2">1 Month FREE Trial</h3>
+              <p className="text-white/80">Try Our SEO — Risk Free!</p>
+            </div>
+
+            {/* Price */}
+            <div className="p-6 text-center border-b border-border">
+              <p className="text-sm text-muted-foreground mb-2">First Month</p>
+              <div className="flex items-center justify-center gap-1">
+                <span className="text-5xl md:text-6xl font-bold text-green-600">FREE</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 mt-2">
+                <span className="text-muted-foreground line-through">₹6,666</span>
+                <span className="bg-green-500 text-white px-2 py-0.5 rounded text-sm font-bold">100% OFF</span>
+              </div>
+              
+              <div className="mt-4 p-3 bg-green-50 rounded-lg border border-green-200">
+                <p className="text-sm font-bold text-green-700">🎉 Start ranking in your city TODAY!</p>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div className="p-6 space-y-4">
+              <h4 className="font-semibold text-foreground mb-4">FREE Trial Includes:</h4>
+              {[
+                "Complete website SEO audit",
+                "Local keyword research",
+                "On-page SEO optimization",
+                "Google My Business setup",
+                "Rank in your city!",
+              ].map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="p-6 bg-green-50">
+              <Button 
+                onClick={handleCTAClick}
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold h-12 text-base"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Start FREE Trial Now
+              </Button>
+            </div>
+          </div>
+
+          {/* Quarterly Package Card */}
           <div className="bg-card rounded-2xl border-4 border-accent shadow-2xl overflow-visible relative mt-6">
             {/* Best Value Badge */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg flex items-center gap-2 z-10">
@@ -60,56 +124,42 @@ export function PricingSection() {
             
             {/* Header */}
             <div className="bg-primary text-white p-6 text-center pt-8">
-              <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-1.5 text-sm font-bold mb-3 animate-pulse">
+              <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-1.5 text-sm font-bold mb-3">
                 <Shield className="w-4 h-4" />
-                Pay After Ranking Guarantee
+                After FREE Trial
               </div>
-              <h3 className="text-2xl font-bold mb-2">Local SEO Package</h3>
-              <p className="text-white/80">Complete Local SEO for Any Business in India</p>
+              <h3 className="text-2xl font-bold mb-2">Quarterly SEO Package</h3>
+              <p className="text-white/80">Complete Local SEO for 3 Months</p>
             </div>
 
             {/* Price */}
             <div className="p-6 text-center border-b border-border">
-              <p className="text-sm text-muted-foreground mb-2">Total Investment (pay after ranking)</p>
+              <p className="text-sm text-muted-foreground mb-2">Per Quarter (3 Months)</p>
               <div className="flex items-center justify-center gap-1">
                 <IndianRupee className="w-8 h-8 text-foreground" />
-                <span className="text-5xl md:text-6xl font-bold text-foreground">25,000</span>
+                <span className="text-5xl md:text-6xl font-bold text-foreground">20,000</span>
               </div>
               <div className="flex items-center justify-center gap-2 mt-2">
-                <span className="text-muted-foreground line-through">₹75,000</span>
-                <span className="bg-accent text-white px-2 py-0.5 rounded text-sm font-bold">67% OFF</span>
+                <span className="text-muted-foreground line-through">₹45,000</span>
+                <span className="bg-accent text-white px-2 py-0.5 rounded text-sm font-bold">55% OFF</span>
               </div>
               
-              {/* Payment Steps */}
-              <div className="mt-6 space-y-3 text-left">
-                <div className="bg-green-500 text-white rounded-xl p-4">
-                  <p className="text-xs uppercase tracking-wider mb-1">Pay Today</p>
-                  <p className="text-2xl font-bold">₹0 — Nothing!</p>
-                  <p className="text-sm text-white/80">We start working on your SEO right away</p>
-                </div>
-                <div className="bg-muted rounded-xl p-4">
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Pay After Ranking</p>
-                  <p className="text-2xl font-bold text-foreground">₹25,000</p>
-                  <p className="text-sm text-muted-foreground">Only when you see results on Google!</p>
-                </div>
-              </div>
-              
-              <div className="mt-4 p-3 bg-red-50 rounded-lg border border-red-200">
-                <p className="text-sm font-bold text-red-700">🔒 No Ranking = No Payment!</p>
+              <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                <p className="text-sm font-bold text-amber-700">⚠️ 100% Advance Payment Required</p>
               </div>
             </div>
 
             {/* Features */}
             <div className="p-6 space-y-4">
-              <h4 className="font-semibold text-foreground mb-4">What's Included:</h4>
+              <h4 className="font-semibold text-foreground mb-4">Quarterly Package Includes:</h4>
               {[
                 "Website SEO + Free Redesign (if needed)",
-                "Local keyword research & targeting",
+                "Advanced local keyword targeting",
                 "Quality backlink building",
                 "Local directory submissions",
                 "Google Maps ranking",
-                "Results in 15-30 days",
-                "6 months of active SEO work",
+                "3 months of active SEO work",
+                "Monthly performance reports",
               ].map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -125,37 +175,68 @@ export function PricingSection() {
                 className="w-full bg-accent hover:bg-accent/90 text-white font-semibold h-12 text-base"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                Get Started - WhatsApp Now
+                Start with FREE Trial
               </Button>
               <p className="text-center text-sm text-muted-foreground mt-3">
-                Free consultation • No commitment required
+                FREE 1 Month → Then ₹20,000/Quarter
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Important Notes */}
+        <div className="mt-12 max-w-3xl mx-auto">
+          <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-6">
+            <h3 className="text-lg font-bold text-amber-800 mb-4 flex items-center gap-2">
+              📋 Important Notes:
+            </h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>1 Month FREE Trial</strong> — No payment required to start. Test our service risk-free!</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>Quarterly Package: ₹20,000</strong> — After your FREE trial, continue with our affordable quarterly plan.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>100% Advance Payment</strong> — Quarterly subscription requires full advance payment.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>Rank in Your City</strong> — We optimize your business for local search in your target city.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>No Long-term Lock-in</strong> — Cancel anytime. No hidden charges or renewal fees.</span>
+              </li>
+            </ul>
           </div>
         </div>
 
         {/* Trust Points */}
         <div className="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-100 text-green-600 mb-3">
               <Shield className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-foreground">₹0 Upfront — Pay Later!</h4>
-            <p className="text-sm text-muted-foreground">₹25,000 after we rank you</p>
+            <h4 className="font-bold text-foreground">1 Month FREE Trial</h4>
+            <p className="text-sm text-muted-foreground">No payment to start</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
               <Zap className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-foreground">No Ranking = No Payment</h4>
-            <p className="text-sm text-muted-foreground">You don't pay a single rupee</p>
+            <h4 className="font-bold text-foreground">₹20,000/Quarter</h4>
+            <p className="text-sm text-muted-foreground">100% Advance Payment</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">
               <Clock className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-foreground">Results in 15-30 Days</h4>
-            <p className="text-sm text-muted-foreground">See rankings before paying</p>
+            <h4 className="font-bold text-foreground">Rank in Your City</h4>
+            <p className="text-sm text-muted-foreground">Local SEO optimization</p>
           </div>
         </div>
       </div>
