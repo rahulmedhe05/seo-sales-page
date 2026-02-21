@@ -13,9 +13,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GoPlnr | First Get Ranked on Google, Then Pay - Local SEO Services",
+  title: "GoPlnr | FREE 1 Month SEO Trial - Local SEO Services India",
   description:
-    "First get ranked on Google's first page, then pay us. No upfront fees. Local SEO for all businesses — Google Maps ranking, website SEO & local search optimization.",
+    "Start with FREE 1 Month SEO Trial! Rank in your city. If you like, continue at ₹20,000/Quarter. Google Business Profile, AI Search visibility & beat your competitors.",
   keywords:
     "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     canonical: "https://goplnr.com",
   },
   openGraph: {
-    title: "GoPlnr | First Get Ranked on Google, Then Pay",
+    title: "GoPlnr | FREE 1 Month SEO Trial - Rank in Your City",
     description:
-      "First get ranked on Google, then pay. No upfront fees. Local SEO services for all businesses across India.",
+      "Start FREE! 1 Month SEO Trial. If you like, continue at ₹20,000/Quarter. Google Business Profile + AI Search visibility.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoPlnr | First Get Ranked, Then Pay",
-    description: "First get ranked on Google, then pay. No upfront fees. Local SEO services for all businesses across India.",
+    title: "GoPlnr | FREE 1 Month SEO Trial",
+    description: "Start FREE! 1 Month SEO Trial. If you like, continue at ₹20,000/Quarter. Google Business Profile + AI Search visibility.",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
@@ -92,7 +92,7 @@ export default function RootLayout({
         "@id": "https://goplnr.com/#organization",
         name: "GoPlnr - Local SEO Services",
         image: "https://goplnr.com/logo.png",
-        description: "First get ranked on Google, then pay. ₹0 upfront. Local SEO services for all businesses. Website SEO and local search optimization.",
+        description: "FREE 1 Month SEO Trial! Rank in your city. ₹20,000/Quarter if you like. Google Business Profile, AI Search visibility, website SEO optimization.",
         url: "https://goplnr.com",
         telephone: "+916353583148",
         email: "hello@goplnr.com",
@@ -114,7 +114,7 @@ export default function RootLayout({
         "@type": "Service",
         "@id": "https://goplnr.com/#service-localseo",
         name: "GoPlnr Local SEO Services",
-        description: "Complete local SEO package including website SEO, local citations, backlink building, and Google Maps ranking. First get ranked, then pay.",
+        description: "Complete local SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. FREE 1 Month Trial + ₹20,000/Quarter.",
         provider: {
           "@id": "https://goplnr.com/#organization",
         },

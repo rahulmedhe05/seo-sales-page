@@ -42,7 +42,7 @@ export function Navigation() {
                 GoPlnr
               </h1>
               <p className={`text-xs transition-colors duration-300 ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
-                First Get Ranked, Then Pay!
+                FREE 1 Month SEO Trial!
               </p>
             </div>
           </div>
