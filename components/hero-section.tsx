@@ -329,27 +329,27 @@ _Sent via GoPlnr Website_
 
               {/* Important Notes Section */}
               <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-4">
-                <p className="text-sm font-bold text-amber-800 mb-2">📋 Important Notes:</p>
+                <p className="text-sm font-bold text-amber-800 mb-2">📋 What You Get:</p>
                 <ul className="space-y-2 text-xs text-amber-700">
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span><strong>1 Month FREE Trial</strong> — No payment required to start</span>
+                    <span><strong>1 Month FREE Trial</strong> — No payment to start</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span><strong>If You Like It:</strong> Continue at ₹20,000/Quarter</span>
+                    <span><strong>Google Business Profile</strong> — Fully optimized</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span><strong>100% Advance Payment</strong> required for quarterly subscription</span>
+                    <span><strong>AI Search Ready</strong> — ChatGPT, Gemini visibility</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span>Rank in your city with local SEO optimization</span>
+                    <span><strong>Beat Top 5 Competitors</strong> — Guaranteed!</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span><strong>No Obligation</strong> — Don’t like it? No need to continue!</span>
+                    <span><strong>₹20,000/Quarter</strong> — 100% Advance (if you like!)</span>
                   </li>
                 </ul>
               </div>

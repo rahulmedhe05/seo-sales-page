@@ -92,7 +92,9 @@ export function PricingSection() {
                 "Complete website SEO audit",
                 "Local keyword research",
                 "On-page SEO optimization",
-                "Google My Business setup",
+                "Google Business Profile optimization",
+                "AI Search visibility (ChatGPT, Gemini & more)",
+                "Competitor analysis — beat your top 5!",
                 "Rank in your city!",
               ].map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -154,9 +156,11 @@ export function PricingSection() {
               <h4 className="font-semibold text-foreground mb-4">Quarterly Package Includes:</h4>
               {[
                 "Website SEO + Free Redesign (if needed)",
+                "Google Business Profile — fully optimized",
+                "AI Search ready (ChatGPT, Gemini, Perplexity)",
+                "Beat your top 5 competitors guaranteed",
                 "Advanced local keyword targeting",
                 "Quality backlink building",
-                "Local directory submissions",
                 "Google Maps ranking",
                 "3 months of active SEO work",
                 "Monthly performance reports",
@@ -188,28 +192,28 @@ export function PricingSection() {
         <div className="mt-12 max-w-3xl mx-auto">
           <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-6">
             <h3 className="text-lg font-bold text-amber-800 mb-4 flex items-center gap-2">
-              📋 Important Notes:
+              📋 What's Included:
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>1 Month FREE Trial</strong> — No payment required to start. Test our service risk-free!</span>
+                <span className="text-amber-800"><strong>Google Business Profile</strong> — Fully optimized for maximum local visibility & Maps ranking.</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>If You Like It:</strong> Continue at ₹20,000/Quarter — completely optional, no pressure!</span>
+                <span className="text-amber-800"><strong>Website SEO Strong</strong> — Complete on-page optimization + free redesign if needed.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>AI Search Visibility</strong> — Get found on ChatGPT, Gemini, Perplexity & other AI assistants.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-amber-800"><strong>Beat Top 5 Competitors</strong> — We analyze & ensure you rank ahead of your competition!</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <span className="text-amber-800"><strong>100% Advance Payment</strong> — Quarterly subscription requires full advance payment.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>Rank in Your City</strong> — We optimize your business for local search in your target city.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>No Obligation</strong> — Don't like the results? No need to continue. Zero commitment!</span>
               </li>
             </ul>
           </div>

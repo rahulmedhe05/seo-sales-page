@@ -7,7 +7,10 @@ import {
   TrendingUp, 
   Globe, 
   Headphones,
-  ArrowRight
+  ArrowRight,
+  MapPin,
+  Bot,
+  Target
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -35,10 +38,24 @@ const benefits = [
   },
   {
     icon: TrendingUp,
-    title: "First Page or Free",
-    description: "We guarantee first page ranking on Google for your target keywords. No excuses, no exceptions.",
-    highlight: "Written Guarantee",
+    title: "Beat Your Top 5 Competitors",
+    description: "We analyze your top 5 local competitors and ensure your business ranks ahead of them. Guaranteed!",
+    highlight: "Competitor Domination",
     color: "bg-orange-500",
+  },
+  {
+    icon: MapPin,
+    title: "Google Business Profile Strong",
+    description: "Full optimization of your Google Business Profile for maximum visibility in local searches and Google Maps.",
+    highlight: "Maps Ranking Boost",
+    color: "bg-red-500",
+  },
+  {
+    icon: Bot,
+    title: "AI Search Ready",
+    description: "Get found on AI-powered searches like ChatGPT, Gemini, Perplexity & other AI assistants. Future-proof your SEO!",
+    highlight: "ChatGPT & Gemini Ready",
+    color: "bg-indigo-500",
   },
   {
     icon: Globe,
