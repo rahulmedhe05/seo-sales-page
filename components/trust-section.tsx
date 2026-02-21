@@ -5,8 +5,8 @@ import { Award, Users, HandshakeIcon, Target, Clock } from "lucide-react"
 const trustPoints = [
   {
     icon: Target,
-    title: "Pay After Ranking",
-    description: "We're so confident in our work — if we don't rank you, you don't pay. Zero upfront, zero risk.",
+    title: "1 Month FREE Trial",
+    description: "Start with a FREE 1 month SEO trial. No payment required. Rank in your city before you pay anything!",
   },
   {
     icon: Users,

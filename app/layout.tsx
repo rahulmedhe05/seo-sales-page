@@ -121,9 +121,9 @@ export default function RootLayout({
         areaServed: "India",
         offers: {
           "@type": "Offer",
-          price: "25000",
-          priceCurrency: "INR",
-          description: "One-time Local SEO package - Pay after ranking - No ranking no payment",
+          "price": "20000",
+          "priceCurrency": "INR",
+          "description": "FREE 1 Month SEO Trial + ₹20,000 per Quarter - Rank in your city - 100% Advance Payment for Quarterly",
         },
       },
       {

@@ -14,9 +14,9 @@ import { Button } from "@/components/ui/button"
 const benefits = [
   {
     icon: IndianRupee,
-    title: "Pay ₹25K Only AFTER Ranking",
-    description: "₹0 upfront. We do the SEO first, rank you on Google, THEN you pay. No ranking? No payment!",
-    highlight: "100% Pay Later",
+    title: "1 Month FREE SEO Trial",
+    description: "Start with a FREE 1 month trial. We rank your business in your city — no payment required to start!",
+    highlight: "100% FREE to Start",
     color: "bg-green-500",
   },
   {
@@ -28,9 +28,9 @@ const benefits = [
   },
   {
     icon: ShieldCheck,
-    title: "100% Money-Back Guarantee",
-    description: "If we don't rank you, you don't pay ₹25,000. Zero risk — we take all the risk, not you!",
-    highlight: "No Ranking = No Payment",
+    title: "₹20,000/Quarter — If You Like!",
+    description: "Love the FREE trial results? Continue at just ₹20,000 per quarter. No obligation — only if you're happy!",
+    highlight: "No Obligation",
     color: "bg-purple-500",
   },
   {

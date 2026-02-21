@@ -6,12 +6,12 @@ const comparisons = [
   {
     aspect: "Payment Model",
     agencies: "Monthly fees of ₹5,000 - ₹50,000+",
-    us: "One-time ₹25,000 — No monthly fees",
+    us: "FREE 1 Month Trial + ₹20,000/Quarter",
   },
   {
     aspect: "Risk",
     agencies: "You pay upfront, hope for results",
-    us: "You pay only after ranking on Google",
+    us: "Try FREE for 1 month — no obligation!",
   },
   {
     aspect: "Contracts",

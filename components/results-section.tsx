@@ -33,10 +33,10 @@ const results = [
 ]
 
 const stats = [
-  { number: "₹0", label: "Pay Upfront", icon: Target },
+  { number: "FREE", label: "1 Month Trial", icon: Target },
   { number: "15-30", label: "Days to Rank", icon: TrendingUp },
-  { number: "₹25K", label: "Pay After Ranking", icon: Award },
-  { number: "₹0", label: "If No Results", icon: BarChart3 },
+  { number: "₹20K", label: "Per Quarter", icon: Award },
+  { number: "100%", label: "Risk-Free", icon: BarChart3 },
 ]
 
 export function ResultsSection() {
@@ -108,10 +108,10 @@ export function ResultsSection() {
         {/* Bottom Note */}
         <div className="mt-12 text-center">
           <p className="text-white/90 text-lg">
-            <span className="text-accent font-bold">Your business could be next.</span> ₹0 upfront — pay ₹25,000 only after we rank you!
+            <span className="text-accent font-bold">Your business could be next.</span> Start with FREE 1 Month Trial — If you like, continue at ₹20K/Quarter!
           </p>
           <p className="text-white/70 text-base mt-2">
-            No ranking? You don't pay a single rupee!
+            No obligation. Try FREE and decide later!
           </p>
         </div>
       </div>

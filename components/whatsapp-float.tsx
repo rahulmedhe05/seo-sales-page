@@ -35,7 +35,7 @@ export function WhatsAppFloat() {
 
     // Construct WhatsApp message
     const message = `
-🚀 *LOCAL SEO ENQUIRY - PAY AFTER RANKING* 🚀
+🎁 *FREE 1 MONTH SEO TRIAL ENQUIRY* 🎁
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
@@ -44,7 +44,8 @@ export function WhatsAppFloat() {
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
 
-💰 Pay ₹25,000 only AFTER we rank you!
+🎁 FREE 1 Month SEO Trial - Rank in My City!
+💰 Then ₹20,000/Quarter (If I Like!)
 _Sent via GoPlnr Website_
     `.trim()
 
@@ -85,17 +86,17 @@ _Sent via GoPlnr Website_
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="sm:max-w-[450px] max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold text-primary">Start Your SEO Journey</DialogTitle>
+            <DialogTitle className="text-2xl font-bold text-primary">Start Your FREE SEO Trial</DialogTitle>
             <DialogDescription>
-              ₹0 upfront • Pay ₹25,000 only after we rank you
+              🎁 1 Month FREE • If you like, continue at ₹20K/Quarter
             </DialogDescription>
           </DialogHeader>
 
-          {/* Pay Later Banner */}
+          {/* FREE Trial Banner */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-3 flex items-start gap-2">
             <span className="text-green-600 flex-shrink-0 mt-0.5">✅</span>
             <p className="text-sm text-green-800 font-medium">
-              No payment required now. We do the SEO first, you pay only after seeing results!
+              Start with 1 Month FREE! No payment required. If you love the results, continue at ₹20,000/Quarter.
             </p>
           </div>
 
@@ -187,7 +188,7 @@ _Sent via GoPlnr Website_
             </Button>
 
             <p className="text-xs text-center text-muted-foreground">
-              🔒 Pay after ranking. No ranking = No payment.
+              🎁 1 Month FREE | Then ₹20K/Quarter (if you like!)
             </p>
           </form>
         </DialogContent>

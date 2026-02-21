@@ -30,7 +30,7 @@ export function FinalCTASection() {
     })
 
     const message = `
-🚀 *LOCAL SEO ENQUIRY - PAY AFTER RANKING* 🚀
+🎁 *FREE 1 MONTH SEO TRIAL ENQUIRY* 🎁
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
@@ -39,7 +39,8 @@ export function FinalCTASection() {
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
 
-💰 Pay ₹25,000 only AFTER we rank you!
+🎁 FREE 1 Month SEO Trial - Rank in My City!
+💰 Then ₹20,000/Quarter (If I Like!)
 
 ―――――――――――――
 _Sent via GoPlnr Website_
@@ -70,12 +71,12 @@ _Sent via GoPlnr Website_
               
               <div className="space-y-4">
                 {[
-                  "₹0 upfront — totally pay later!",
-                  "Pay ₹25,000 ONLY after we rank you",
-                  "No ranking = No payment",
+                  "🎁 1 Month FREE SEO Trial!",
+                  "Rank in your city — no payment to start",
+                  "If you like, continue at ₹20,000/Quarter",
                   "Google Maps & Search ranking in 15-30 days",
                   "Free website redesign if needed",
-                  "Zero risk - We take all the risk!",
+                  "No obligation — 100% risk-free!",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
@@ -110,20 +111,20 @@ _Sent via GoPlnr Website_
 
             {/* Right - Form */}
             <div className="bg-white rounded-2xl p-6 shadow-2xl">
-              {/* Pay Later Banner */}
+              {/* FREE Trial Banner */}
               <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-4 flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0 mt-0.5">✅</span>
                 <p className="text-sm text-green-800 font-medium">
-                  No payment required now. We do the SEO first, you pay only after seeing results!
+                  Start with 1 Month FREE! No payment required. If you love the results, continue at ₹20,000/Quarter.
                 </p>
               </div>
 
               <div className="text-center mb-4">
                 <h3 className="text-xl font-bold text-foreground">
-                  Start Your SEO Journey
+                  Start Your FREE SEO Trial
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  100% Pay Later • Pay ₹25,000 only after we rank you
+                  🎁 1 Month FREE | Then ₹20K/Quarter (if you like!)
                 </p>
               </div>
 
@@ -223,7 +224,7 @@ _Sent via GoPlnr Website_
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground pt-2">
-                  🔒 Pay after ranking. No ranking = No payment.
+                  🎁 1 Month FREE | Then ₹20K/Quarter (if you like!)
                 </p>
               </form>
             </div>
