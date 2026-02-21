@@ -15,10 +15,10 @@ export function PricingSection() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-accent font-semibold uppercase tracking-wider mb-3 text-sm">🎁 Limited Time Offer</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
-            FREE SEO for 1 Month + ₹20,000/Quarter
+            FREE SEO for 1 Month — If You Like, Continue!
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Try our SEO FREE for 1 month. Love the results? Continue at just ₹20,000/Quarter!
+            Try our SEO FREE for 1 month. Love the results? Continue at just ₹20,000/Quarter. No obligation!
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export function PricingSection() {
                 After FREE Trial
               </div>
               <h3 className="text-2xl font-bold mb-2">Quarterly SEO Package</h3>
-              <p className="text-white/80">Complete Local SEO for 3 Months</p>
+              <p className="text-white/80">If You Like, Continue After Trial!</p>
             </div>
 
             {/* Price */}
@@ -178,7 +178,7 @@ export function PricingSection() {
                 Start with FREE Trial
               </Button>
               <p className="text-center text-sm text-muted-foreground mt-3">
-                FREE 1 Month → Then ₹20,000/Quarter
+                FREE 1 Month → If you like, continue at ₹20K/Quarter
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export function PricingSection() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>Quarterly Package: ₹20,000</strong> — After your FREE trial, continue with our affordable quarterly plan.</span>
+                <span className="text-amber-800"><strong>If You Like It:</strong> Continue at ₹20,000/Quarter — completely optional, no pressure!</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -209,7 +209,7 @@ export function PricingSection() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>No Long-term Lock-in</strong> — Cancel anytime. No hidden charges or renewal fees.</span>
+                <span className="text-amber-800"><strong>No Obligation</strong> — Don't like the results? No need to continue. Zero commitment!</span>
               </li>
             </ul>
           </div>

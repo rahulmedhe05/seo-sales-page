@@ -80,8 +80,8 @@ _Sent via GoPlnr Website_
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
               <span className="text-accent font-bold text-2xl md:text-3xl">100% FREE Trial.</span> We rank your business on Google in your city.
-              <span className="font-bold"> Then just ₹20,000/Quarter to dominate local search! </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">Try Before You Pay!</span>
+              <span className="font-bold"> If you like the results, continue at just ₹20,000/Quarter! </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">No Obligation!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
@@ -107,13 +107,13 @@ _Sent via GoPlnr Website_
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
                   <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
                   <div>
-                    <p className="font-bold">Continue with ₹20,000/Quarter</p>
-                    <p className="text-sm text-white/80">Love the results? Subscribe quarterly (100% advance)</p>
+                    <p className="font-bold">If you like, continue at ₹20,000/Quarter</p>
+                    <p className="text-sm text-white/80">Happy with results? Subscribe — No obligation to continue!</p>
                   </div>
                 </div>
               </div>
               <div className="mt-4 text-center bg-yellow-400 rounded-lg p-2">
-                <p className="font-bold text-gray-900">⚡ Try FREE for 1 Month — Zero Risk!</p>
+                <p className="font-bold text-gray-900">⚡ Try FREE — If You Like It, Continue!</p>
               </div>
             </div>
 
@@ -323,7 +323,7 @@ _Sent via GoPlnr Website_
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  🎁 1 Month FREE | Then ₹20,000/Quarter
+                  🎁 1 Month FREE | If you like, continue at ₹20K/Quarter
                 </p>
               </form>
 
@@ -337,7 +337,7 @@ _Sent via GoPlnr Website_
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span><strong>Quarterly Package:</strong> ₹20,000 per quarter after trial</span>
+                    <span><strong>If You Like It:</strong> Continue at ₹20,000/Quarter</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
@@ -349,7 +349,7 @@ _Sent via GoPlnr Website_
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent font-bold">✓</span>
-                    <span>Cancel anytime — No long-term commitment required</span>
+                    <span><strong>No Obligation</strong> — Don’t like it? No need to continue!</span>
                   </li>
                 </ul>
               </div>
