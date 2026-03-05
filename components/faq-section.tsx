@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Can you guarantee #1 ranking on Google?",
     answer:
-      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and our pay-after-ranking model which ensures you only pay for actual results.",
+      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and results within 30-45 days. Our one-time payment model means you save lakhs compared to monthly SEO agencies.",
   },
   {
     question: "What keywords will I rank for?",
