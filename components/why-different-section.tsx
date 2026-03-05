@@ -6,12 +6,12 @@ const comparisons = [
   {
     aspect: "Payment Model",
     agencies: "Monthly fees of ₹5,000 - ₹50,000+",
-    us: "FREE 1 Month Trial + ₹20,000/Quarter",
+    us: "₹24,999 One-Time (Website + SEO)",
   },
   {
     aspect: "Risk",
     agencies: "You pay upfront, hope for results",
-    us: "Try FREE for 1 month — no obligation!",
+    us: "One-time payment includes everything",
   },
   {
     aspect: "Contracts",
@@ -94,7 +94,7 @@ export function WhyDifferentSection() {
               Tired of paying monthly fees with no results?
             </h3>
             <p className="text-muted-foreground mb-5">
-              Switch to our risk-free model. Pay only when you rank.
+              Get website + SEO for ₹24,999 one-time. No monthly fees.
             </p>
             <a 
               href="#contact" 

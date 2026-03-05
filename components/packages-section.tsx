@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Check, Sparkles, Crown, Star } from "lucide-react"
+import { useWhatsAppForm } from "@/components/whatsapp-form-context"
 
 const packages = [
   {
@@ -55,12 +56,7 @@ const packages = [
 ]
 
 export function PackagesSection() {
-  const handleWhatsAppInquiry = (packageName: string) => {
-    const message = `Hello! I'm interested in the ${packageName} interior design package. Please provide more details.`
-    const whatsappNumber = "919876543210"
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappURL, "_blank")
-  }
+  const { openForm } = useWhatsAppForm()
 
   return (
     <section id="packages" className="py-12 md:py-32 bg-card">
@@ -118,7 +114,7 @@ export function PackagesSection() {
                     : "bg-primary hover:bg-accent text-primary-foreground"
                 }`}
                 size="lg"
-                onClick={() => handleWhatsAppInquiry(pkg.name)}
+                onClick={openForm}
               >
                 Book {pkg.name}
               </Button>

@@ -33,10 +33,10 @@ const results = [
 ]
 
 const stats = [
-  { number: "FREE", label: "1 Month Trial", icon: Target },
-  { number: "15-30", label: "Days to Rank", icon: TrendingUp },
-  { number: "₹20K", label: "Per Quarter", icon: Award },
-  { number: "100%", label: "Risk-Free", icon: BarChart3 },
+  { number: "₹24.9K", label: "One-Time", icon: Target },
+  { number: "30-45", label: "Days to Rank", icon: TrendingUp },
+  { number: "Website", label: "+ SEO", icon: Award },
+  { number: "Google", label: "Ranking", icon: BarChart3 },
 ]
 
 export function ResultsSection() {
@@ -49,7 +49,7 @@ export function ResultsSection() {
             See What We've Achieved for Our Clients
           </h2>
           <p className="text-lg text-white/80 leading-relaxed">
-            Real businesses. Real rankings. Real results in 15-30 days.
+            Real businesses. Real rankings. Real results in 30-45 days.
           </p>
         </div>
 
@@ -108,10 +108,10 @@ export function ResultsSection() {
         {/* Bottom Note */}
         <div className="mt-12 text-center">
           <p className="text-white/90 text-lg">
-            <span className="text-accent font-bold">Your business could be next.</span> Start with FREE 1 Month Trial — If you like, continue at ₹20K/Quarter!
+            <span className="text-accent font-bold">Your business could be next.</span> Get Website + SEO for just ₹24,999 one-time!
           </p>
           <p className="text-white/70 text-base mt-2">
-            No obligation. Try FREE and decide later!
+            No monthly fees. Rank on Google in your city!
           </p>
         </div>
       </div>

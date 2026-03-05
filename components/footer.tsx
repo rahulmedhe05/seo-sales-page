@@ -16,7 +16,7 @@ export function Footer() {
               <h3 className="text-xl font-bold">GoPlnr</h3>
             </div>
             <p className="text-white/70 leading-relaxed">
-              FREE 1 Month SEO Trial. Rank in your city. If you like, continue at ₹20,000/Quarter.
+              Website + SEO for ₹24,999 one-time. Rank your business on Google. No monthly fees.
             </p>
             <div className="flex gap-3">
               <a

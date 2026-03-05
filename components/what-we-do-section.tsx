@@ -24,8 +24,8 @@ const steps = [
   {
     number: "04",
     icon: BarChart3,
-    title: "Ranking in 15-30 Days",
-    description: "We track your rankings and provide clear reports. See results in 15-30 days — completely FREE for the first month!",
+    title: "Ranking in 30-45 Days",
+    description: "We track your rankings and provide clear reports. See results in 30-45 days with our complete website + SEO package!",
   },
 ]
 

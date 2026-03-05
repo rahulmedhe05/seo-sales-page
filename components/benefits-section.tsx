@@ -13,27 +13,28 @@ import {
   Target
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useWhatsAppForm } from "@/components/whatsapp-form-context"
 
 const benefits = [
   {
     icon: IndianRupee,
-    title: "1 Month FREE SEO Trial",
-    description: "Start with a FREE 1 month trial. We rank your business in your city — no payment required to start!",
-    highlight: "100% FREE to Start",
+    title: "₹24,999 One-Time Payment",
+    description: "Complete website + SEO package for just ₹24,999. No monthly fees, no hidden costs!",
+    highlight: "No Monthly Fees",
     color: "bg-green-500",
   },
   {
     icon: Calendar,
-    title: "Results in 15-30 Days",
-    description: "See your business climbing Google rankings within weeks, not months. We work fast because we're confident.",
+    title: "Results in 30-45 Days",
+    description: "See your business climbing Google rankings within 30-45 days. We use the best strategies to deliver fast results.",
     highlight: "Fastest in Industry",
     color: "bg-blue-500",
   },
   {
     icon: ShieldCheck,
-    title: "₹20,000/Quarter — If You Like!",
-    description: "Love the FREE trial results? Continue at just ₹20,000 per quarter. No obligation — only if you're happy!",
-    highlight: "No Obligation",
+    title: "Professional Website Included",
+    description: "Get a modern, fast-loading website designed for your business. Included in the ₹24,999 package!",
+    highlight: "Website Included",
     color: "bg-purple-500",
   },
   {
@@ -59,9 +60,9 @@ const benefits = [
   },
   {
     icon: Globe,
-    title: "Free Website Redesign",
-    description: "Need a better website? We'll redesign it for free as part of our SEO package. No extra charges.",
-    highlight: "₹30,000 Value - FREE",
+    title: "Complete SEO Optimization",
+    description: "Full on-page SEO, keyword targeting, and content optimization to rank your business on Google.",
+    highlight: "Rank on Google",
     color: "bg-pink-500",
   },
   {
@@ -74,6 +75,8 @@ const benefits = [
 ]
 
 export function BenefitsSection() {
+  const { openForm } = useWhatsAppForm()
+  
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -112,10 +115,7 @@ export function BenefitsSection() {
           <Button 
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white font-semibold h-14 px-8 text-lg"
-            onClick={() => {
-              const whatsappURL = `https://wa.me/916353583148?text=${encodeURIComponent("Hi! I want to learn more about your Local SEO service.")}`
-              window.open(whatsappURL, "_blank")
-            }}
+            onClick={openForm}
           >
             Claim These Benefits Now
             <ArrowRight className="w-5 h-5 ml-2" />

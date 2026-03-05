@@ -3,10 +3,14 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Checkbox } from "@/components/ui/checkbox"
 import { TrendingUp, CheckCircle2, Shield, MessageCircle, Clock, Zap } from "lucide-react"
 import { addLead } from "@/lib/leads"
+import { useWhatsAppForm } from "@/components/whatsapp-form-context"
 
 export function HeroSection() {
+  const { openForm } = useWhatsAppForm()
+  const [agreedToTerms, setAgreedToTerms] = useState(false)
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
@@ -19,6 +23,10 @@ export function HeroSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
+    if (!agreedToTerms) {
+      return
+    }
+
     // Save lead to localStorage
     addLead({
       fullName: formData.fullName,
@@ -30,7 +38,7 @@ export function HeroSection() {
     })
 
     const message = `
-🚀 *FREE 1 MONTH SEO TRIAL ENQUIRY* 🚀
+🚀 *WEBSITE + SEO ENQUIRY* 🚀
 
 • *Full Name:* ${formData.fullName}
 • *Mobile Number:* ${formData.phoneNumber}
@@ -39,10 +47,28 @@ export function HeroSection() {
 • *Location:* ${formData.location}
 • *Website:* ${formData.websiteUrl || "No website"}
 
-🎁 FREE 1 Month SEO Trial - Rank in My City!
-💰 Then ₹20,000/Quarter (100% Advance)
+―――――――――――――
+📦 *WHAT YOU WILL GET:*
+―――――――――――――
+✅ Professional Website Design — Modern, fast-loading website
+✅ Complete SEO Optimization — Rank on Google in your city
+✅ Google Business Profile Setup — Fully optimized
+✅ AI Search Ready — ChatGPT, Gemini visibility
+✅ Beat Top 5 Competitors — Guaranteed ranking
+
+💰 *PRICING:* ₹24,999 One-Time (No Monthly Fees)
 
 ―――――――――――――
+📋 *TERMS & CONDITIONS:*
+―――――――――――――
+1. Work starts after 50% advance payment
+2. Delivery timeline: 30-45 working days
+3. 1 round of revision included
+4. Domain & hosting charges extra (if needed)
+5. Client to provide content/images (or extra charges apply)
+
+✅ *I have read and agreed to the Terms & Conditions*
+
 _Sent via GoPlnr Website_
     `.trim()
 
@@ -65,71 +91,71 @@ _Sent via GoPlnr Website_
           {/* Left Side - Main Content */}
           <div className="md:col-span-3 text-white space-y-5">
             {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 font-bold animate-pulse">
+            <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 font-bold">
               <Zap className="w-5 h-5" />
-              <span className="text-sm">🎁 FREE 1 MONTH SEO TRIAL - LIMITED OFFER!</span>
+              <span className="text-sm">💼 WEBSITE + SEO — ₹24,999 ONE-TIME!</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              Get <span className="text-accent">FREE SEO for 1 Month</span>
+              Get <span className="text-accent">Website + SEO</span>
               <br />
-              <span className="text-2xl sm:text-3xl md:text-4xl">Rank in Your City — Risk Free!</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl">Rank on Google — ₹24,999 Only!</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              <span className="text-accent font-bold text-2xl md:text-3xl">100% FREE Trial.</span> We rank your business on Google in your city.
-              <span className="font-bold"> If you like the results, continue at just ₹20,000/Quarter! </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">No Obligation!</span>
+              <span className="text-accent font-bold text-2xl md:text-3xl">One-Time Payment.</span> We build your website and rank your business on Google.
+              <span className="font-bold"> Complete package for just ₹24,999! </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">No Monthly Fees!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
             <div className="bg-accent/20 backdrop-blur-sm rounded-xl p-5 border-2 border-accent">
               <h3 className="text-xl font-bold mb-4 text-center text-accent">
-                � FREE 1 MONTH TRIAL - HOW IT WORKS
+                💼 WHAT YOU GET FOR ₹24,999
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                  <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                  <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
                   <div>
-                    <p className="font-bold">Submit your business details</p>
-                    <p className="text-sm text-white/80">Takes 2 minutes — 100% FREE to start!</p>
+                    <p className="font-bold">Professional Website Design</p>
+                    <p className="text-sm text-white/80">Modern, fast-loading website for your business</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                  <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                  <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
                   <div>
-                    <p className="font-bold">FREE SEO for 1 Full Month</p>
-                    <p className="text-sm text-white/80">We rank your business in your city — no charges!</p>
+                    <p className="font-bold">Complete SEO Optimization</p>
+                    <p className="text-sm text-white/80">Rank your business on Google in your city</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
                   <div className="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
                   <div>
-                    <p className="font-bold">If you like, continue at ₹20,000/Quarter</p>
-                    <p className="text-sm text-white/80">Happy with results? Subscribe — No obligation to continue!</p>
+                    <p className="font-bold">Google Business Profile + AI Search</p>
+                    <p className="text-sm text-white/80">Get found on Google Maps, ChatGPT, Gemini & more</p>
                   </div>
                 </div>
               </div>
               <div className="mt-4 text-center bg-yellow-400 rounded-lg p-2">
-                <p className="font-bold text-gray-900">⚡ Try FREE — If You Like It, Continue!</p>
+                <p className="font-bold text-gray-900">⚡ One-Time Payment — No Monthly Fees!</p>
               </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-4">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">1 Month</div>
-                <div className="text-sm text-white/70">FREE Trial</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">₹24.9K</div>
+                <div className="text-sm text-white/70">One-Time</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">₹20K</div>
-                <div className="text-sm text-white/70">Per Quarter</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">Website</div>
+                <div className="text-sm text-white/70">+ SEO</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">100%</div>
-                <div className="text-sm text-white/70">Risk-Free</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">Google</div>
+                <div className="text-sm text-white/70">Ranking</div>
               </div>
             </div>
 
@@ -180,10 +206,7 @@ _Sent via GoPlnr Website_
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-white font-semibold text-base h-12"
-                onClick={() => {
-                  const whatsappURL = `https://wa.me/916353583148?text=${encodeURIComponent("Hi! I want to rank my business on Google. Please share details.")}`
-                  window.open(whatsappURL, "_blank")
-                }}
+                onClick={openForm}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp Us Now
@@ -194,14 +217,14 @@ _Sent via GoPlnr Website_
           {/* Right Side - Lead Form */}
           <div className="md:col-span-2">
             <div className="bg-white rounded-2xl p-5 md:p-6 shadow-2xl border-4 border-accent">
-              {/* FREE Trial Banner */}
-              <div className="bg-green-50 border-2 border-green-400 rounded-lg p-3 mb-4">
+              {/* Pricing Banner */}
+              <div className="bg-accent/10 border-2 border-accent rounded-lg p-3 mb-4">
                 <div className="flex items-start gap-2">
-                  <div className="text-2xl">🎁</div>
+                  <div className="text-2xl">💼</div>
                   <div>
-                    <p className="text-green-800 text-sm font-bold">FREE 1 MONTH SEO TRIAL!</p>
-                    <p className="text-green-700 text-xs mt-1">
-                      Get ranked in your city for FREE. No payment needed to start. Limited time offer!
+                    <p className="text-accent text-sm font-bold">WEBSITE + SEO PACKAGE</p>
+                    <p className="text-foreground text-xs mt-1">
+                      Complete website + SEO to rank on Google. One-time payment only!
                     </p>
                   </div>
                 </div>
@@ -210,21 +233,21 @@ _Sent via GoPlnr Website_
               <div className="text-center mb-4">
                 <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-3 py-1 text-sm font-bold mb-2">
                   <Clock className="w-4 h-4" />
-                  Start Your FREE Trial
+                  Get Started Today
                 </div>
                 <h3 className="text-lg font-bold text-foreground">
-                  🚀 Rank in Your City — FREE for 1 Month!
+                  🚀 Rank on Google — ₹24,999 Only!
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Then ₹20,000/Quarter (100% Advance)
+                  One-time payment. No monthly fees.
                 </p>
               </div>
 
-              {/* Pricing Banner */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
-                <p className="text-sm font-bold text-center text-blue-800">🎯 Special Quarterly Package</p>
-                <p className="text-xl font-bold text-center text-blue-900 mt-1">₹20,000/Quarter</p>
-                <p className="text-xs text-center text-blue-700 mt-1">After FREE 1 Month Trial • 100% Advance Payment</p>
+              {/* Price Display */}
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                <p className="text-sm font-bold text-center text-green-800">🎯 Website + SEO Package</p>
+                <p className="text-xl font-bold text-center text-green-900 mt-1">₹24,999 One-Time</p>
+                <p className="text-xs text-center text-green-700 mt-1">No Hidden Costs • No Monthly Fees</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -317,42 +340,56 @@ _Sent via GoPlnr Website_
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 text-base mt-3">
+                {/* What You Will Get */}
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3 space-y-2">
+                  <p className="text-xs font-bold text-green-800">📦 What You Will Get:</p>
+                  <ul className="text-xs text-green-700 space-y-1 pl-2">
+                    <li>✅ Professional Website Design</li>
+                    <li>✅ Complete SEO Optimization</li>
+                    <li>✅ Google Business Profile Setup</li>
+                    <li>✅ AI Search Ready (ChatGPT, Gemini)</li>
+                    <li>✅ Beat Top 5 Competitors</li>
+                  </ul>
+                </div>
+
+                {/* Terms & Conditions Checkbox */}
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 space-y-2">
+                  <p className="text-xs font-bold text-amber-800">📋 Terms & Conditions:</p>
+                  <ul className="text-xs text-amber-700 space-y-1 pl-2">
+                    <li>• Work starts after 50% advance payment</li>
+                    <li>• Delivery timeline: 30-45 working days</li>
+                    <li>• 1 round of revision included</li>
+                    <li>• Domain & hosting charges extra (if needed)</li>
+                    <li>• Client to provide content/images (or extra charges)</li>
+                  </ul>
+                  <div className="flex items-center space-x-2 pt-2 border-t border-amber-200">
+                    <Checkbox 
+                      id="heroTerms" 
+                      checked={agreedToTerms}
+                      onCheckedChange={(checked) => setAgreedToTerms(checked === true)}
+                    />
+                    <label
+                      htmlFor="heroTerms"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                    >
+                      I agree to the Terms & Conditions <span className="text-destructive">*</span>
+                    </label>
+                  </div>
+                </div>
+
+                <Button 
+                  type="submit" 
+                  className="w-full bg-accent hover:bg-accent/90 text-white font-bold h-12 text-base mt-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={!agreedToTerms}
+                >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Start FREE Trial →
+                  Get Started — ₹24,999 →
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  🎁 1 Month FREE | If you like, continue at ₹20K/Quarter
+                  💼 One-time payment | Website + SEO included
                 </p>
               </form>
-
-              {/* Important Notes Section */}
-              <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-4">
-                <p className="text-sm font-bold text-amber-800 mb-2">📋 What You Get:</p>
-                <ul className="space-y-2 text-xs text-amber-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span><strong>1 Month FREE Trial</strong> — No payment to start</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span><strong>Google Business Profile</strong> — Fully optimized</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span><strong>AI Search Ready</strong> — ChatGPT, Gemini visibility</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span><strong>Beat Top 5 Competitors</strong> — Guaranteed!</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span><strong>₹20,000/Quarter</strong> — 100% Advance (if you like!)</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

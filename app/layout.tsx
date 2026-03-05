@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { AnalyticsTracker } from "@/components/analytics-tracker"
+import { WhatsAppFormProvider } from "@/components/whatsapp-form-context"
 import Script from "next/script"
 import "./globals.css"
 
@@ -13,9 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GoPlnr | FREE 1 Month SEO Trial - Local SEO Services India",
+  title: "GoPlnr | Website + SEO ₹24,999 One-Time - Rank on Google",
   description:
-    "Start with FREE 1 Month SEO Trial! Rank in your city. If you like, continue at ₹20,000/Quarter. Google Business Profile, AI Search visibility & beat your competitors.",
+    "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile, AI Search visibility & beat your competitors.",
   keywords:
     "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
     canonical: "https://goplnr.com",
   },
   openGraph: {
-    title: "GoPlnr | FREE 1 Month SEO Trial - Rank in Your City",
+    title: "GoPlnr | Website + SEO ₹24,999 One-Time - Rank on Google",
     description:
-      "Start FREE! 1 Month SEO Trial. If you like, continue at ₹20,000/Quarter. Google Business Profile + AI Search visibility.",
+      "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile + AI Search visibility.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoPlnr | FREE 1 Month SEO Trial",
-    description: "Start FREE! 1 Month SEO Trial. If you like, continue at ₹20,000/Quarter. Google Business Profile + AI Search visibility.",
+    title: "GoPlnr | Website + SEO ₹24,999 One-Time",
+    description: "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile + AI Search visibility.",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
@@ -92,7 +93,7 @@ export default function RootLayout({
         "@id": "https://goplnr.com/#organization",
         name: "GoPlnr - Local SEO Services",
         image: "https://goplnr.com/logo.png",
-        description: "FREE 1 Month SEO Trial! Rank in your city. ₹20,000/Quarter if you like. Google Business Profile, AI Search visibility, website SEO optimization.",
+        description: "Website + SEO for ₹24,999 one-time! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
         url: "https://goplnr.com",
         telephone: "+916353583148",
         email: "hello@goplnr.com",
@@ -114,16 +115,16 @@ export default function RootLayout({
         "@type": "Service",
         "@id": "https://goplnr.com/#service-localseo",
         name: "GoPlnr Local SEO Services",
-        description: "Complete local SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. FREE 1 Month Trial + ₹20,000/Quarter.",
+        description: "Complete website + SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. ₹24,999 one-time.",
         provider: {
           "@id": "https://goplnr.com/#organization",
         },
         areaServed: "India",
         offers: {
           "@type": "Offer",
-          "price": "20000",
+          "price": "24999",
           "priceCurrency": "INR",
-          "description": "FREE 1 Month SEO Trial + ₹20,000 per Quarter - Rank in your city - 100% Advance Payment for Quarterly",
+          "description": "Website + SEO ₹24,999 one-time - Rank your business on Google",
         },
       },
       {
@@ -162,9 +163,11 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
-        <AnalyticsTracker />
-        <Analytics />
+        <WhatsAppFormProvider>
+          {children}
+          <AnalyticsTracker />
+          <Analytics />
+        </WhatsAppFormProvider>
       </body>
     </html>
   )

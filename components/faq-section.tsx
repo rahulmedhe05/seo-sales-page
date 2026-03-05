@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "How long does it take to rank on Google?",
     answer:
-      "Local SEO typically takes 2-4 months to show significant results. For less competitive keywords, you may see results in as little as 4-6 weeks. For highly competitive terms, it may take 4-6 months. We focus on realistic expectations, not fake promises.",
+      "We use the best SEO strategies to show your business on Google in 30 to 45 days. Our proven methods focus on quick yet sustainable results. We work aggressively on your local SEO to ensure you start seeing rankings within this timeframe.",
   },
   {
     question: "What if I don't rank? Do I still have to pay?",

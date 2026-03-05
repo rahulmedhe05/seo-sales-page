@@ -5,8 +5,8 @@ import { Award, Users, HandshakeIcon, Target, Clock } from "lucide-react"
 const trustPoints = [
   {
     icon: Target,
-    title: "1 Month FREE Trial",
-    description: "Start with a FREE 1 month SEO trial. No payment required. Rank in your city before you pay anything!",
+    title: "₹24,999 One-Time",
+    description: "Complete website + SEO package for ₹24,999. No monthly fees, no hidden costs!",
   },
   {
     icon: Users,
