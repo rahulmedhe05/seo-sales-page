@@ -10,9 +10,9 @@ const faqs = [
       "We use the best SEO strategies to show your business on Google in 30 to 45 days. Our proven methods focus on quick yet sustainable results. We work aggressively on your local SEO to ensure you start seeing rankings within this timeframe.",
   },
   {
-    question: "What if I don't rank? Do I still have to pay?",
+    question: "Why do you require 100% advance payment?",
     answer:
-      "No. Our model is simple — you pay only after you see yourself ranking on Google for your target keywords. If we don't deliver results, you don't pay. This keeps us accountable and removes your risk completely.",
+      "We believe in working with serious clients who are committed to their business growth. 100% advance payment ensures mutual commitment — you're invested in results, and we're dedicated to delivering them. Our one-time fee of ₹24,999 saves you lakhs compared to monthly SEO agencies charging ₹8,000-15,000/month with no guaranteed timeline.",
   },
   {
     question: "Is this suitable for my business?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Can you guarantee #1 ranking on Google?",
     answer:
-      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and results within 30-45 days. Our one-time payment model means you save lakhs compared to monthly SEO agencies.",
+      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and visible results within 30-45 days. We've helped 200+ businesses rank on Google's first page using our tested methods.",
   },
   {
     question: "What keywords will I rank for?",
