@@ -89,7 +89,7 @@ export function PricingSection() {
               {[
                 "Professional website design & development",
                 "Complete website SEO optimization",
-                "Google Business Profile — fully optimized",
+                "Get Consistent Leads from Google",
                 "AI Search ready (ChatGPT, Gemini, Perplexity)",
                 "Beat your top 5 competitors",
                 "Advanced local keyword targeting",
@@ -133,7 +133,7 @@ export function PricingSection() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span className="text-amber-800"><strong>Google Business Profile</strong> — Fully optimized for maximum local visibility & Maps ranking.</span>
+                <span className="text-amber-800"><strong>Consistent Leads from Google</strong> — Get found by customers actively searching for your services.</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />

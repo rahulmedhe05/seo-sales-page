@@ -52,7 +52,7 @@ export function FinalCTASection() {
 ―――――――――――――
 ✅ Professional Website Design — Modern, fast-loading website
 ✅ Complete SEO Optimization — Rank on Google in your city
-✅ Google Business Profile Setup — Fully optimized
+✅ Get Consistent Leads from Google — Fully optimized
 ✅ AI Search Ready — ChatGPT, Gemini visibility
 ✅ Beat Top 5 Competitors — Guaranteed ranking
 
@@ -61,11 +61,11 @@ export function FinalCTASection() {
 ―――――――――――――
 📋 *TERMS & CONDITIONS:*
 ―――――――――――――
-1. Work starts after 50% advance payment
+1. 100% advance payment required (serious clients only)
 2. Delivery timeline: 30-45 working days
 3. 1 round of revision included
-4. Domain & hosting charges extra (if needed)
-5. Client to provide content/images (or extra charges apply)
+4. Domain charges not included
+5. Free hosting & maintenance for 1 year, then ₹5,000/year
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -248,7 +248,7 @@ _Sent via GoPlnr Website_
                   <ul className="text-xs text-green-700 space-y-1 pl-2">
                     <li>✅ Professional Website Design</li>
                     <li>✅ Complete SEO Optimization</li>
-                    <li>✅ Google Business Profile Setup</li>
+                    <li>✅ Get Consistent Leads from Google</li>
                     <li>✅ AI Search Ready (ChatGPT, Gemini)</li>
                     <li>✅ Beat Top 5 Competitors</li>
                   </ul>
@@ -258,21 +258,22 @@ _Sent via GoPlnr Website_
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 space-y-2">
                   <p className="text-xs font-bold text-amber-800">📋 Terms & Conditions:</p>
                   <ul className="text-xs text-amber-700 space-y-1 pl-2">
-                    <li>• Work starts after 50% advance payment</li>
+                    <li>• 100% advance payment required (serious clients only)</li>
                     <li>• Delivery timeline: 30-45 working days</li>
                     <li>• 1 round of revision included</li>
-                    <li>• Domain & hosting charges extra (if needed)</li>
-                    <li>• Client to provide content/images (or extra charges)</li>
+                    <li>• Domain charges not included</li>
+                    <li>• Free hosting & maintenance for 1 year, then ₹5,000/year</li>
                   </ul>
                   <div className="flex items-center space-x-2 pt-2 border-t border-amber-200">
                     <Checkbox 
                       id="ctaTerms" 
                       checked={agreedToTerms}
                       onCheckedChange={(checked) => setAgreedToTerms(checked === true)}
+                      className="h-5 w-5 border-2 border-gray-800 data-[state=checked]:bg-green-600 data-[state=checked]:border-green-600"
                     />
                     <label
                       htmlFor="ctaTerms"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                      className="text-sm font-bold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer text-gray-800"
                     >
                       I agree to the Terms & Conditions <span className="text-destructive">*</span>
                     </label>
