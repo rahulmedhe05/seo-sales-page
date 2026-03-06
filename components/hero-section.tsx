@@ -56,16 +56,17 @@ export function HeroSection() {
 ✅ AI Search Ready — ChatGPT, Gemini visibility
 ✅ Beat Top 5 Competitors — Guaranteed ranking
 
-💰 *PRICING:* ₹24,999 One-Time (No Monthly Fees)
+💰 *PRICING:* ₹1,000 Deposit → ₹24,000 After Ranking (Total: ₹25,000)
 
 ―――――――――――――
 📋 *TERMS & CONDITIONS:*
 ―――――――――――――
-1. 100% advance payment required (serious clients only)
-2. Delivery timeline: 30-45 working days
-3. 1 round of revision included
-4. Domain charges not included
-5. Free hosting & maintenance for 1 year, then ₹5,000/year
+1. ₹1,000 deposit to start (booking fee)
+2. ₹24,000 paid only AFTER ranking on Google
+3. Delivery timeline: 30-45 working days
+4. 1 round of revision included
+5. Domain charges not included
+6. Free hosting & maintenance for 1 year, then ₹5,000/year
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -93,27 +94,27 @@ _Sent via GoPlnr Website_
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 font-bold">
               <Zap className="w-5 h-5" />
-              <span className="text-sm">💼 WEBSITE + SEO — ₹24,999 ONE-TIME!</span>
+              <span className="text-sm">💼 ₹1,000 Deposit → ₹24,000 After Ranking!</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
               Get <span className="text-accent">Website + SEO</span>
               <br />
-              <span className="text-2xl sm:text-3xl md:text-4xl">Rank on Google — ₹24,999 Only!</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl">₹1,000 Deposit → ₹24,000 After Ranking!</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              <span className="text-accent font-bold text-2xl md:text-3xl">One-Time Payment.</span> We build your website and rank your business on Google.
-              <span className="font-bold"> Complete package for just ₹24,999! </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">No Monthly Fees!</span>
+              <span className="text-accent font-bold text-2xl md:text-3xl">Pay After Results!</span> We build your website and rank your business on Google.
+              <span className="font-bold"> Pay ₹1,000 now, ₹24,000 only after ranking! </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">No Risk!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
             <div className="bg-accent/20 backdrop-blur-sm rounded-xl p-5 border-2 border-accent">
               <h3 className="text-xl font-bold mb-4 text-center text-accent">
-                💼 WHAT YOU GET FOR ₹24,999
+                💼 WHAT YOU GET FOR ₹25,000 (₹1K + ₹24K)
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
@@ -236,18 +237,18 @@ _Sent via GoPlnr Website_
                   Get Started Today
                 </div>
                 <h3 className="text-lg font-bold text-foreground">
-                  🚀 Rank on Google — ₹24,999 Only!
+                  🚀 ₹1,000 Deposit → ₹24,000 After Ranking!
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
-                  One-time payment. No monthly fees.
+                  Pay only after your website ranks on Google!
                 </p>
               </div>
 
               {/* Price Display */}
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
                 <p className="text-sm font-bold text-center text-green-800">🎯 Website + SEO Package</p>
-                <p className="text-xl font-bold text-center text-green-900 mt-1">₹24,999 One-Time</p>
-                <p className="text-xs text-center text-green-700 mt-1">No Hidden Costs • No Monthly Fees</p>
+                <p className="text-xl font-bold text-center text-green-900 mt-1">₹1,000 Now → ₹24,000 After Ranking</p>
+                <p className="text-xs text-center text-green-700 mt-1">Total: ₹25,000 • Pay After Results!</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -384,11 +385,11 @@ _Sent via GoPlnr Website_
                   disabled={!agreedToTerms}
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Get Started — ₹24,999 →
+                  Start with ₹1,000 Deposit →
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  💼 One-time payment | Website + SEO included
+                  💼 Pay ₹24,000 only after ranking on Google!
                 </p>
               </form>
             </div>

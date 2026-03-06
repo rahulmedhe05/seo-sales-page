@@ -18,9 +18,9 @@ import { useWhatsAppForm } from "@/components/whatsapp-form-context"
 const benefits = [
   {
     icon: IndianRupee,
-    title: "₹24,999 One-Time Payment",
-    description: "Complete website + SEO package for just ₹24,999. No monthly fees, no hidden costs!",
-    highlight: "No Monthly Fees",
+    title: "₹1,000 Deposit → ₹24,000 After Ranking",
+    description: "Pay just ₹1,000 to start. Remaining ₹24,000 only after your website ranks on Google!",
+    highlight: "Pay After Results",
     color: "bg-green-500",
   },
   {
@@ -33,7 +33,7 @@ const benefits = [
   {
     icon: ShieldCheck,
     title: "Professional Website Included",
-    description: "Get a modern, fast-loading website designed for your business. Included in the ₹24,999 package!",
+    description: "Get a modern, fast-loading website designed for your business. Included in the ₹25,000 package!",
     highlight: "Website Included",
     color: "bg-purple-500",
   },

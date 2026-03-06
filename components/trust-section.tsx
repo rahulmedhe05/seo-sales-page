@@ -5,8 +5,8 @@ import { Award, Users, HandshakeIcon, Target, Clock } from "lucide-react"
 const trustPoints = [
   {
     icon: Target,
-    title: "₹24,999 One-Time",
-    description: "Complete website + SEO package for ₹24,999. No monthly fees, no hidden costs!",
+    title: "₹1,000 Deposit Only",
+    description: "Pay ₹1,000 to start, ₹24,000 only after ranking. Total ₹25,000 — pay after results!",
   },
   {
     icon: Users,

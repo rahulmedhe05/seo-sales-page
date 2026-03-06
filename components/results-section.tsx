@@ -108,7 +108,7 @@ export function ResultsSection() {
         {/* Bottom Note */}
         <div className="mt-12 text-center">
           <p className="text-white/90 text-lg">
-            <span className="text-accent font-bold">Your business could be next.</span> Get Website + SEO for just ₹24,999 one-time!
+            <span className="text-accent font-bold">Your business could be next.</span> Pay ₹1,000 deposit, ₹24,000 after ranking!
           </p>
           <p className="text-white/70 text-base mt-2">
             No monthly fees. Rank on Google in your city!

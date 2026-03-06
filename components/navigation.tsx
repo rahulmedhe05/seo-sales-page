@@ -42,7 +42,7 @@ export function Navigation() {
                 GoPlnr
               </h1>
               <p className={`text-xs transition-colors duration-300 ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
-                Website + SEO ₹24,999
+                ₹1K Deposit → ₹24K After Ranking
               </p>
             </div>
           </div>

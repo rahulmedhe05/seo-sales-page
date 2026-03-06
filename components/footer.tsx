@@ -16,7 +16,7 @@ export function Footer() {
               <h3 className="text-xl font-bold">GoPlnr</h3>
             </div>
             <p className="text-white/70 leading-relaxed">
-              Website + SEO for ₹24,999 one-time. Rank your business on Google. No monthly fees.
+              Website + SEO for ₹25,000. Pay ₹1,000 deposit, ₹24,000 after ranking. No monthly fees.
             </p>
             <div className="flex gap-3">
               <a

@@ -6,7 +6,7 @@ const comparisons = [
   {
     aspect: "Payment Model",
     agencies: "Monthly fees of ₹5,000 - ₹50,000+",
-    us: "₹24,999 One-Time (Website + SEO)",
+    us: "₹1,000 Deposit → ₹24,000 After Ranking",
   },
   {
     aspect: "Risk",
@@ -94,7 +94,7 @@ export function WhyDifferentSection() {
               Tired of paying monthly fees with no results?
             </h3>
             <p className="text-muted-foreground mb-5">
-              Get website + SEO for ₹24,999 one-time. No monthly fees.
+              Pay ₹1,000 deposit, ₹24,000 only after ranking. No risk!
             </p>
             <a 
               href="#contact" 

@@ -56,16 +56,17 @@ export function FinalCTASection() {
 ✅ AI Search Ready — ChatGPT, Gemini visibility
 ✅ Beat Top 5 Competitors — Guaranteed ranking
 
-💰 *PRICING:* ₹24,999 One-Time (No Monthly Fees)
+💰 *PRICING:* ₹1,000 Deposit → ₹24,000 After Ranking (Total: ₹25,000)
 
 ―――――――――――――
 📋 *TERMS & CONDITIONS:*
 ―――――――――――――
-1. 100% advance payment required (serious clients only)
-2. Delivery timeline: 30-45 working days
-3. 1 round of revision included
-4. Domain charges not included
-5. Free hosting & maintenance for 1 year, then ₹5,000/year
+1. ₹1,000 deposit to start (booking fee)
+2. ₹24,000 paid only AFTER ranking on Google
+3. Delivery timeline: 30-45 working days
+4. 1 round of revision included
+5. Domain charges not included
+6. Free hosting & maintenance for 1 year, then ₹5,000/year
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -102,7 +103,7 @@ _Sent via GoPlnr Website_
                   "Rank on Google in your city",
                   "Google Maps & Search ranking in 30-45 days",
                   "AI Search visibility (ChatGPT, Gemini)",
-                  "₹24,999 one-time — No monthly fees!",
+                  "₹1,000 deposit — ₹24,000 after ranking!",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
@@ -139,16 +140,16 @@ _Sent via GoPlnr Website_
               <div className="bg-accent/10 border border-accent rounded-lg p-3 mb-4 flex items-start gap-2">
                 <span className="text-accent flex-shrink-0 mt-0.5">✅</span>
                 <p className="text-sm text-foreground font-medium">
-                  Website + SEO Package for ₹24,999 one-time. No monthly fees. Rank on Google!
+                  Pay ₹1,000 now, ₹24,000 only after your website ranks on Google!
                 </p>
               </div>
 
               <div className="text-center mb-4">
                 <h3 className="text-xl font-bold text-foreground">
-                  Get Started — ₹24,999
+                  Get Started — ₹1,000 Deposit
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  💼 One-time payment | Website + SEO included
+                  💼 Pay ₹24,000 only after ranking!
                 </p>
               </div>
 
@@ -286,11 +287,11 @@ _Sent via GoPlnr Website_
                   disabled={!agreedToTerms}
                 >
                   <ArrowRight className="w-5 h-5 mr-2" />
-                  Get Started — ₹24,999
+                  Get Started — ₹1,000 Deposit
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground pt-2">
-                  💼 One-time payment | No monthly fees
+                  💼 Pay ₹24,000 only after ranking!
                 </p>
               </form>
             </div>

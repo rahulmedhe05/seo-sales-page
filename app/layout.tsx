@@ -14,9 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GoPlnr | Website + SEO ₹24,999 One-Time - Rank on Google",
+  title: "GoPlnr | Website + SEO ₹1,000 Deposit - Pay After Ranking",
   description:
-    "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile, AI Search visibility & beat your competitors.",
+    "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package. No risk!",
   keywords:
     "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     canonical: "https://goplnr.com",
   },
   openGraph: {
-    title: "GoPlnr | Website + SEO ₹24,999 One-Time - Rank on Google",
+    title: "GoPlnr | Website + SEO ₹1,000 Deposit - Pay After Ranking",
     description:
-      "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile + AI Search visibility.",
+      "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoPlnr | Website + SEO ₹24,999 One-Time",
-    description: "Get your business ranked on Google for just ₹24,999 one-time! Complete website + SEO package. Google Business Profile + AI Search visibility.",
+    title: "GoPlnr | Website + SEO ₹1,000 Deposit",
+    description: "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package.",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
@@ -93,7 +93,7 @@ export default function RootLayout({
         "@id": "https://goplnr.com/#organization",
         name: "GoPlnr - Local SEO Services",
         image: "https://goplnr.com/logo.png",
-        description: "Website + SEO for ₹24,999 one-time! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
+        description: "Website + SEO: ₹1,000 deposit, ₹24,000 after ranking! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
         url: "https://goplnr.com",
         telephone: "+917016020144",
         email: "hello@goplnr.com",
@@ -115,7 +115,7 @@ export default function RootLayout({
         "@type": "Service",
         "@id": "https://goplnr.com/#service-localseo",
         name: "GoPlnr Local SEO Services",
-        description: "Complete website + SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. ₹24,999 one-time.",
+        description: "Complete website + SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. ₹1,000 deposit, ₹24,000 after ranking.",
         provider: {
           "@id": "https://goplnr.com/#organization",
         },
@@ -124,7 +124,7 @@ export default function RootLayout({
           "@type": "Offer",
           "price": "24999",
           "priceCurrency": "INR",
-          "description": "Website + SEO ₹24,999 one-time - Rank your business on Google",
+          "description": "Website + SEO: ₹1,000 deposit, ₹24,000 after ranking - Rank your business on Google",
         },
       },
       {
