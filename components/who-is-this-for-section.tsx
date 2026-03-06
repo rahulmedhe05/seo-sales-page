@@ -52,7 +52,7 @@ export function WhoIsThisForSection() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-accent font-semibold uppercase tracking-wider mb-3 text-sm">Who Is This For?</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
-            Perfect for <span className="text-primary">ALL Local Businesses</span> Anywhere in India
+            Perfect for <span className="text-primary">ALL Local Businesses</span> in Vadodara
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             If customers search for your service on Google and you want them to find <span className="font-bold text-foreground">YOU</span> instead of your competitors — this is for you.
@@ -76,7 +76,7 @@ export function WhoIsThisForSection() {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-foreground font-medium">
-            <span className="text-primary">Bottom line:</span> If you have a local business <span className="font-bold">anywhere in India</span> and want more customers from Google — we can help.
+            <span className="text-primary">Bottom line:</span> If you have a local business <span className="font-bold">in Vadodara</span> and want more customers from Google — we can help.
           </p>
         </div>
       </div>

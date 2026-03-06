@@ -85,7 +85,7 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                 <p className="text-white/70">
-                  India (Remote Services)
+                  Vadodara, Gujarat
                 </p>
               </div>
 
@@ -132,7 +132,7 @@ export function Footer() {
 
       {/* SEO Keywords (hidden) */}
       <div className="sr-only">
-        Local SEO services, Google ranking, SEO services India, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization
+        Local SEO services Vadodara, Google ranking, SEO services Vadodara, Google Maps ranking, local business SEO Vadodara, digital marketing, website SEO optimization, local search optimization
       </div>
     </footer>
   )

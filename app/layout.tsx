@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package. No risk!",
   keywords:
-    "local SEO services, SEO services India, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company, best SEO services, goplnr",
+    "local SEO services Vadodara, SEO services Vadodara, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company Vadodara, best SEO services Vadodara, goplnr",
   authors: [{ name: "GoPlnr" }],
   creator: "GoPlnr",
   publisher: "GoPlnr",
@@ -107,8 +107,8 @@ export default function RootLayout({
         ],
         priceRange: "₹₹",
         serviceArea: {
-          "@type": "Country",
-          name: "India",
+          "@type": "City",
+          name: "Vadodara",
         },
       },
       {
@@ -119,7 +119,7 @@ export default function RootLayout({
         provider: {
           "@id": "https://goplnr.com/#organization",
         },
-        areaServed: "India",
+        areaServed: "Vadodara",
         offers: {
           "@type": "Offer",
           "price": "24999",

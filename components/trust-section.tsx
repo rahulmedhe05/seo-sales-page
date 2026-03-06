@@ -72,7 +72,7 @@ export function TrustSection() {
               </div>
               <div className="text-left">
                 <p className="font-bold text-foreground">Rajesh S.</p>
-                <p className="text-sm text-muted-foreground">Service Provider, India</p>
+                <p className="text-sm text-muted-foreground">Service Provider, Vadodara</p>
               </div>
             </div>
           </div>
