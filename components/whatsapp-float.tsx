@@ -77,7 +77,7 @@ _Sent via GoPlnr Website_
     `.trim()
 
     // Replace with your actual WhatsApp number (with country code, no + or spaces)
-    const whatsappNumber = "916353583148"
+    const whatsappNumber = "917016020144"
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
 
     // Open WhatsApp

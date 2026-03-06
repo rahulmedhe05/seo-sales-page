@@ -47,7 +47,7 @@ _Sent via Essence Space Website_
     `.trim()
 
     // Replace with your WhatsApp number (include country code without + sign)
-    const whatsappNumber = "916353583148"
+    const whatsappNumber = "917016020144"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
 
     // Open WhatsApp

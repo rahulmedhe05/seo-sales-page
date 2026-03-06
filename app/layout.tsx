@@ -95,7 +95,7 @@ export default function RootLayout({
         image: "https://goplnr.com/logo.png",
         description: "Website + SEO for ₹24,999 one-time! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
         url: "https://goplnr.com",
-        telephone: "+916353583148",
+        telephone: "+917016020144",
         email: "hello@goplnr.com",
         address: {
           "@type": "PostalAddress",

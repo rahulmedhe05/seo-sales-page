@@ -72,7 +72,7 @@ export function FinalCTASection() {
 _Sent via GoPlnr Website_
     `.trim()
 
-    const whatsappNumber = "916353583148"
+    const whatsappNumber = "917016020144"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
   }
@@ -116,11 +116,11 @@ _Sent via GoPlnr Website_
                 <p className="font-semibold">Or contact us directly:</p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a 
-                    href="tel:+916353583148"
+                    href="tel:+917016020144"
                     className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg px-4 py-3 font-medium transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    +91 63535 83148
+                    +91 70160 20144
                   </a>
                   <button 
                     onClick={openForm}

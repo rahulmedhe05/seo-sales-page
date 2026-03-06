@@ -72,7 +72,7 @@ export function HeroSection() {
 _Sent via GoPlnr Website_
     `.trim()
 
-    const whatsappNumber = "916353583148"
+    const whatsappNumber = "917016020144"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
   }
