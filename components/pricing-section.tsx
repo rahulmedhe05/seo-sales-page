@@ -16,7 +16,7 @@ export function PricingSection() {
             Website + SEO — Rank on Google!
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Get a professional website and SEO to rank your business on Google for just ₹24,999 one-time payment.
+            Get a professional website and SEO to rank your business on Google — Pay only ₹1,000 now, ₹24,000 after ranking!
           </p>
         </div>
 
@@ -68,10 +68,16 @@ export function PricingSection() {
 
             {/* Price */}
             <div className="p-6 text-center border-b border-border">
-              <p className="text-sm text-muted-foreground mb-2">One-Time Investment</p>
-              <div className="flex items-center justify-center gap-1">
-                <IndianRupee className="w-8 h-8 text-foreground" />
-                <span className="text-5xl md:text-6xl font-bold text-foreground">24,999</span>
+              <p className="text-sm text-muted-foreground mb-2">Pay Only After Results!</p>
+              <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg font-semibold text-accent">₹1,000 Deposit</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-lg font-semibold text-accent">₹24,000 After Ranking</span>
+                </div>
+                <div className="flex items-center justify-center gap-1 mt-2">
+                  <span className="text-3xl md:text-4xl font-bold text-foreground">Total: ₹25,000</span>
+                </div>
               </div>
               <div className="flex items-center justify-center gap-2 mt-2">
                 <span className="text-muted-foreground line-through">₹60,000</span>
@@ -79,7 +85,7 @@ export function PricingSection() {
               </div>
               
               <div className="mt-4 p-3 bg-green-50 rounded-lg border border-green-200">
-                <p className="text-sm font-bold text-green-700">✅ No Monthly Fees. No Hidden Costs.</p>
+                <p className="text-sm font-bold text-green-700">✅ Pay ₹24,000 ONLY when your website ranks on Google!</p>
               </div>
             </div>
 
@@ -111,10 +117,10 @@ export function PricingSection() {
                 className="w-full bg-accent hover:bg-accent/90 text-white font-semibold h-12 text-base"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                Get Started Now — ₹24,999
+                Start with ₹1,000 Deposit
               </Button>
               <p className="text-center text-sm text-muted-foreground mt-3">
-                One-time payment. Website + SEO included.
+                Pay ₹24,000 only after your website ranks on Google!
               </p>
             </div>
           </div>
@@ -124,7 +130,7 @@ export function PricingSection() {
         <div className="mt-12 max-w-3xl mx-auto">
           <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-6">
             <h3 className="text-lg font-bold text-amber-800 mb-4 flex items-center gap-2">
-              📋 What's Included in ₹24,999:
+              📋 What's Included in ₹25,000 (₹1,000 Deposit + ₹24,000 After Ranking):
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
@@ -151,14 +157,45 @@ export function PricingSection() {
           </div>
         </div>
 
+        {/* Terms & Conditions */}
+        <div className="mt-12 max-w-3xl mx-auto">
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
+            <h3 className="text-lg font-bold text-blue-800 mb-4 flex items-center gap-2">
+              📋 Terms & Conditions:
+            </h3>
+            <ul className="space-y-3 text-blue-800">
+              <li className="flex items-start gap-3">
+                <span className="font-bold">1.</span>
+                <span><strong>₹1,000 Deposit</strong> — Pay ₹1,000 to start your project. This is a booking fee to confirm your slot.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="font-bold">2.</span>
+                <span><strong>₹24,000 After Ranking</strong> — Pay the remaining amount ONLY after your website ranks on Google's first page for your targeted keywords.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="font-bold">3.</span>
+                <span><strong>Ranking Timeline</strong> — We aim to rank your website within 30-45 days. You pay only when results are delivered.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="font-bold">4.</span>
+                <span><strong>Total Investment</strong> — ₹25,000 total (₹1,000 deposit + ₹24,000 after ranking). No hidden charges.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="font-bold">5.</span>
+                <span><strong>Deposit Policy</strong> — The ₹1,000 deposit is non-refundable as it covers initial research, keyword analysis, and project setup.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {/* Trust Points */}
         <div className="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-100 text-green-600 mb-3">
               <Shield className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-foreground">One-Time Payment</h4>
-            <p className="text-sm text-muted-foreground">₹24,999 only</p>
+            <h4 className="font-bold text-foreground">Pay After Results</h4>
+            <p className="text-sm text-muted-foreground">₹1,000 deposit only</p>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-3">

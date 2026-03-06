@@ -10,9 +10,9 @@ const faqs = [
       "We use the best SEO strategies to show your business on Google in 30 to 45 days. Our proven methods focus on quick yet sustainable results. We work aggressively on your local SEO to ensure you start seeing rankings within this timeframe.",
   },
   {
-    question: "Why do you require 100% advance payment?",
+    question: "What is your payment structure?",
     answer:
-      "We believe in working with serious clients who are committed to their business growth. 100% advance payment ensures mutual commitment — you're invested in results, and we're dedicated to delivering them. Our one-time fee of ₹24,999 saves you lakhs compared to monthly SEO agencies charging ₹8,000-15,000/month with no guaranteed timeline.",
+      "We offer a risk-free payment model: Pay just ₹1,000 as deposit to start, and the remaining ₹24,000 only AFTER your website ranks on Google! This way, you pay for results, not promises. The ₹1,000 deposit covers initial research, keyword analysis, and project setup. Total investment: ₹25,000 — saving you lakhs compared to monthly SEO agencies charging ₹8,000-15,000/month.",
   },
   {
     question: "Is this suitable for my business?",
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Why one-time payment instead of monthly fees?",
     answer:
-      "Most of the heavy SEO work happens in the first 3-6 months. After that, your rankings typically maintain themselves with minimal effort. We believe in one-time payment because it's honest — you shouldn't keep paying monthly for work done once. Enjoy long-term results!",
+      "Most of the heavy SEO work happens in the first 3-6 months. After that, your rankings typically maintain themselves with minimal effort. We believe in one-time payment (₹1,000 deposit + ₹24,000 after ranking = ₹25,000 total) because it's honest — you shouldn't keep paying monthly for work done once. Plus, you only pay the major amount AFTER you see results!",
   },
   {
     question: "Do I need a website for SEO?",
