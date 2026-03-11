@@ -7,12 +7,12 @@ const faqs = [
   {
     question: "How long does it take to rank on Google?",
     answer:
-      "We use the best SEO strategies to show your business on Google in 30 to 45 days. Our proven methods focus on quick yet sustainable results. We work aggressively on your local SEO to ensure you start seeing rankings within this timeframe.",
+      "We use the best SEO strategies to show your business on Google in 30 days. Our proven methods focus on quick yet sustainable results. We work aggressively on your local SEO to ensure you start seeing rankings within this timeframe.",
   },
   {
-    question: "What is your payment structure?",
+    question: "How much does it cost?",
     answer:
-      "We offer a risk-free payment model: Pay just ₹1,000 as deposit to start, and the remaining ₹24,000 only AFTER your website ranks on Google! This way, you pay for results, not promises. The ₹1,000 deposit covers initial research, keyword analysis, and project setup. Total investment: ₹25,000 — saving you lakhs compared to monthly SEO agencies charging ₹8,000-15,000/month.",
+      "It's 100% FREE for Vadodara businesses! You get a professional website, complete SEO optimization, Google Maps ranking, and AI Search visibility — all at zero cost. This is our exclusive offer for local businesses in Vadodara.",
   },
   {
     question: "Is this suitable for my business?",
@@ -20,19 +20,19 @@ const faqs = [
       "If you have a local business and your customers search for your services on Google, then yes — Local SEO will help you. This works for shops, clinics, restaurants, professionals, service providers, coaching centres, and virtually any local business.",
   },
   {
-    question: "Why one-time payment instead of monthly fees?",
+    question: "Why is it free? What's the catch?",
     answer:
-      "Most of the heavy SEO work happens in the first 3-6 months. After that, your rankings typically maintain themselves with minimal effort. We believe in one-time payment (₹1,000 deposit + ₹24,000 after ranking = ₹25,000 total) because it's honest — you shouldn't keep paying monthly for work done once. Plus, you only pay the major amount AFTER you see results!",
+      "There's no catch! We're building our portfolio and reputation in Vadodara. By offering free website + SEO to local businesses, we get real results to showcase and happy clients who refer us. It's a win-win. You get a professional website and SEO, and we build our track record.",
   },
   {
     question: "Do I need a website for SEO?",
     answer:
-      "Yes, a website is essential for our SEO services. We optimize your website content, structure, and technical aspects to help you rank on Google. If your current website needs improvement, we include a free redesign as part of our package.",
+      "Yes, a website is essential for our SEO services. We optimize your website content, structure, and technical aspects to help you rank on Google. If you don't have a website, we build one for you FREE as part of this offer!",
   },
   {
     question: "Can you guarantee #1 ranking on Google?",
     answer:
-      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and visible results within 30-45 days. We've helped 200+ businesses rank on Google's first page using our tested methods.",
+      "No honest SEO professional can guarantee #1 ranking — Google's algorithm is controlled by Google, not us. What we CAN guarantee is our best effort, proven strategies, and visible results within 30 days. We've helped 200+ businesses rank on Google's first page using our tested methods.",
   },
   {
     question: "What keywords will I rank for?",

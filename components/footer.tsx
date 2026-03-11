@@ -16,7 +16,7 @@ export function Footer() {
               <h3 className="text-xl font-bold">GoPlnr</h3>
             </div>
             <p className="text-white/70 leading-relaxed">
-              Website + SEO for ₹25,000. Pay ₹1,000 deposit, ₹24,000 after ranking. No monthly fees.
+              FREE Website + SEO for Vadodara businesses. Rank on Google at zero cost. No monthly fees.
             </p>
             <div className="flex gap-3">
               <a
@@ -47,7 +47,7 @@ export function Footer() {
               {[
                 { label: "Home", id: "home" },
                 { label: "How It Works", id: "what-we-do" },
-                { label: "Pricing", id: "pricing" },
+                { label: "What You Get", id: "pricing" },
                 { label: "FAQ", id: "faq" },
                 { label: "Contact", id: "contact" },
               ].map((link) => (

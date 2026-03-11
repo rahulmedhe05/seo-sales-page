@@ -5,8 +5,8 @@ import { Award, Users, HandshakeIcon, Target, Clock } from "lucide-react"
 const trustPoints = [
   {
     icon: Target,
-    title: "₹1,000 Deposit Only",
-    description: "Pay ₹1,000 to start, ₹24,000 only after ranking. Total ₹25,000 — pay after results!",
+    title: "100% FREE",
+    description: "Get a professional website and complete SEO at zero cost. Exclusive for Vadodara businesses!",
   },
   {
     icon: Users,
@@ -64,7 +64,7 @@ export function TrustSection() {
           <div className="bg-card rounded-2xl p-6 md:p-8 border border-border text-center">
             <div className="text-4xl mb-4">"</div>
             <p className="text-lg md:text-xl text-foreground italic mb-6">
-              I was paying ₹8,000/month to an agency for 6 months with no results. These guys delivered results in just 30 days! Their one-time payment model saved me lakhs compared to monthly SEO agencies. Best investment I made for my business.
+              I was paying ₹8,000/month to an agency for 6 months with no results. These guys delivered results in just 30 days — and it was completely FREE! Best decision I made for my business.
             </p>
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">

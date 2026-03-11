@@ -14,9 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "GoPlnr | Website + SEO ₹1,000 Deposit - Pay After Ranking",
+  title: "GoPlnr | FREE Website + SEO for Vadodara Businesses",
   description:
-    "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package. No risk!",
+    "Get a FREE professional website + SEO for your Vadodara business! Rank on Google, get found on Google Maps & AI Search. 100% free for Vadodara businesses.",
   keywords:
     "local SEO services Vadodara, SEO services Vadodara, Google ranking, Google Maps ranking, local business SEO, digital marketing, website SEO optimization, local search optimization, SEO company Vadodara, best SEO services Vadodara, goplnr",
   authors: [{ name: "GoPlnr" }],
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     canonical: "https://goplnr.com",
   },
   openGraph: {
-    title: "GoPlnr | Website + SEO ₹1,000 Deposit - Pay After Ranking",
+    title: "GoPlnr | FREE Website + SEO for Vadodara Businesses",
     description:
-      "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package.",
+      "Get a FREE professional website + SEO for your Vadodara business! Rank on Google, get found on Google Maps & AI Search.",
     url: "https://goplnr.com",
     siteName: "GoPlnr - Local SEO Services",
     locale: "en_IN",
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GoPlnr | Website + SEO ₹1,000 Deposit",
-    description: "Get your business ranked on Google! Pay ₹1,000 deposit, ₹24,000 only after ranking. Complete website + SEO package.",
+    title: "GoPlnr | FREE Website + SEO for Vadodara",
+    description: "Get a FREE professional website + SEO for your Vadodara business! Rank on Google & get more customers.",
     images: ["https://goplnr.com/og-image.jpg"],
     creator: "@goplnr",
   },
@@ -93,7 +93,7 @@ export default function RootLayout({
         "@id": "https://goplnr.com/#organization",
         name: "GoPlnr - Local SEO Services",
         image: "https://goplnr.com/logo.png",
-        description: "Website + SEO: ₹1,000 deposit, ₹24,000 after ranking! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
+        description: "FREE Website + SEO for Vadodara businesses! Rank your business on Google. Google Business Profile, AI Search visibility, website SEO optimization.",
         url: "https://goplnr.com",
         telephone: "+917016020144",
         email: "hello@goplnr.com",
@@ -105,7 +105,7 @@ export default function RootLayout({
           "https://www.facebook.com/goplnr",
           "https://www.instagram.com/goplnr",
         ],
-        priceRange: "₹₹",
+        priceRange: "Free",
         serviceArea: {
           "@type": "City",
           name: "Vadodara",
@@ -115,16 +115,16 @@ export default function RootLayout({
         "@type": "Service",
         "@id": "https://goplnr.com/#service-localseo",
         name: "GoPlnr Local SEO Services",
-        description: "Complete website + SEO package including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking. ₹1,000 deposit, ₹24,000 after ranking.",
+        description: "FREE website + SEO for Vadodara businesses including Google Business Profile, AI Search visibility, website SEO, and Google Maps ranking.",
         provider: {
           "@id": "https://goplnr.com/#organization",
         },
         areaServed: "Vadodara",
         offers: {
           "@type": "Offer",
-          "price": "24999",
+          "price": "0",
           "priceCurrency": "INR",
-          "description": "Website + SEO: ₹1,000 deposit, ₹24,000 after ranking - Rank your business on Google",
+          "description": "FREE Website + SEO for Vadodara businesses - Rank your business on Google",
         },
       },
       {

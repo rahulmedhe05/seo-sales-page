@@ -38,7 +38,7 @@ export function FinalCTASection() {
     })
 
     const message = `
-💼 *WEBSITE + SEO ENQUIRY* 💼
+💼 *FREE WEBSITE + SEO ENQUIRY* 💼
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
@@ -48,25 +48,24 @@ export function FinalCTASection() {
 • *Website:* ${formData.websiteUrl || "No website"}
 
 ―――――――――――――
-📦 *WHAT YOU WILL GET:*
+📦 *WHAT YOU WILL GET (FREE):*
 ―――――――――――――
 ✅ Professional Website Design — Modern, fast-loading website
-✅ Complete SEO Optimization — Rank on Google in your city
+✅ Complete SEO Optimization — Rank on Google in Vadodara
 ✅ Get Consistent Leads from Google — Fully optimized
 ✅ AI Search Ready — ChatGPT, Gemini visibility
 ✅ Beat Top 5 Competitors — Guaranteed ranking
 
-💰 *PRICING:* ₹1,000 Deposit → ₹24,000 After Ranking (Total: ₹25,000)
+🎁 *100% FREE for Vadodara Businesses!*
 
 ―――――――――――――
 📋 *TERMS & CONDITIONS:*
 ―――――――――――――
-1. ₹1,000 deposit to start (booking fee)
-2. ₹24,000 paid only AFTER ranking on Google
-3. Delivery timeline: 30-45 working days
-4. 1 round of revision included
-5. Domain charges not included
-6. Free hosting & maintenance for 1 year, then ₹5,000/year
+1. Available for Vadodara-based businesses only
+2. Get ranked in 30 days
+3. 1 round of revision included
+4. Domain charges not included
+5. Free hosting & maintenance
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -98,12 +97,12 @@ _Sent via GoPlnr Website_
               
               <div className="space-y-4">
                 {[
-                  "💼 Website + SEO Package",
+                  "🎁 FREE Website + SEO Package",
                   "Professional website design",
-                  "Rank on Google in your city",
-                  "Google Maps & Search ranking in 30-45 days",
+                  "Rank on Google in Vadodara",
+                  "Google Maps & Search ranking in 30 days",
                   "AI Search visibility (ChatGPT, Gemini)",
-                  "₹1,000 deposit — ₹24,000 after ranking!",
+                  "100% FREE for Vadodara businesses!",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
@@ -136,20 +135,19 @@ _Sent via GoPlnr Website_
 
             {/* Right - Form */}
             <div className="bg-white rounded-2xl p-6 shadow-2xl">
-              {/* Pricing Banner */}
               <div className="bg-accent/10 border border-accent rounded-lg p-3 mb-4 flex items-start gap-2">
                 <span className="text-accent flex-shrink-0 mt-0.5">✅</span>
                 <p className="text-sm text-foreground font-medium">
-                  Pay ₹1,000 now, ₹24,000 only after your website ranks on Google!
+                  100% FREE Website + SEO for Vadodara businesses!
                 </p>
               </div>
 
               <div className="text-center mb-4">
                 <h3 className="text-xl font-bold text-foreground">
-                  Get Started — ₹1,000 Deposit
+                  Get Started — It's FREE!
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  💼 Pay ₹24,000 only after ranking!
+                  🎁 Exclusive for Vadodara businesses!
                 </p>
               </div>
 
@@ -259,11 +257,11 @@ _Sent via GoPlnr Website_
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 space-y-2">
                   <p className="text-xs font-bold text-amber-800">📋 Terms & Conditions:</p>
                   <ul className="text-xs text-amber-700 space-y-1 pl-2">
-                    <li>• 100% advance payment required (serious clients only)</li>
-                    <li>• Delivery timeline: 30-45 working days</li>
+                    <li>• Available for Vadodara-based businesses only</li>
+                    <li>• Get ranked in 30 days</li>
                     <li>• 1 round of revision included</li>
                     <li>• Domain charges not included</li>
-                    <li>• Free hosting & maintenance for 1 year, then ₹5,000/year</li>
+                    <li>• Free hosting & maintenance</li>
                   </ul>
                   <div className="flex items-center space-x-2 pt-2 border-t border-amber-200">
                     <Checkbox 
@@ -287,11 +285,11 @@ _Sent via GoPlnr Website_
                   disabled={!agreedToTerms}
                 >
                   <ArrowRight className="w-5 h-5 mr-2" />
-                  Get Started — ₹1,000 Deposit
+                  Get Started — It's FREE!
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground pt-2">
-                  💼 Pay ₹24,000 only after ranking!
+                  🎁 100% FREE for Vadodara businesses!
                 </p>
               </form>
             </div>

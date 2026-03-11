@@ -24,8 +24,8 @@ const steps = [
   {
     number: "04",
     icon: BarChart3,
-    title: "Ranking in 30-45 Days",
-    description: "We track your rankings and provide clear reports. See results in 30-45 days with our complete website + SEO package!",
+    title: "Ranking in 30 Days",
+    description: "We track your rankings and provide clear reports. See results in 30 days with our complete website + SEO package!",
   },
 ]
 
@@ -75,7 +75,7 @@ export function WhatWeDoSection() {
                 In Simple Words...
               </h3>
               <p className="text-muted-foreground text-lg">
-                We make sure when someone searches <span className="text-primary font-semibold">"[your service] in [your city]"</span> on Google — they find YOUR business. <span className="font-bold text-accent">Pay only after we rank you!</span>
+                We make sure when someone searches <span className="text-primary font-semibold">"[your service] in Vadodara"</span> on Google — they find YOUR business. <span className="font-bold text-accent">And it's completely FREE!</span>
               </p>
             </div>
             <a 

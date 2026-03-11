@@ -6,12 +6,12 @@ const comparisons = [
   {
     aspect: "Payment Model",
     agencies: "Monthly fees of ₹5,000 - ₹50,000+",
-    us: "₹1,000 Deposit → ₹24,000 After Ranking",
+    us: "100% FREE for Vadodara businesses",
   },
   {
     aspect: "Risk",
     agencies: "You pay upfront, hope for results",
-    us: "One-time payment includes everything",
+    us: "Zero cost — completely free!",
   },
   {
     aspect: "Contracts",
@@ -94,7 +94,7 @@ export function WhyDifferentSection() {
               Tired of paying monthly fees with no results?
             </h3>
             <p className="text-muted-foreground mb-5">
-              Pay ₹1,000 deposit, ₹24,000 only after ranking. No risk!
+              Get FREE website + SEO for your Vadodara business. No charges!
             </p>
             <a 
               href="#contact" 

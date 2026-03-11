@@ -42,7 +42,7 @@ export function Navigation() {
                 GoPlnr
               </h1>
               <p className={`text-xs transition-colors duration-300 ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
-                ₹1K Deposit → ₹24K After Ranking
+                FREE Website + SEO for Vadodara
               </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ export function Navigation() {
               onClick={() => scrollToSection("pricing")}
               className={`text-sm transition-colors ${isScrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"}`}
             >
-              Pricing
+              What You Get
             </button>
             <button
               onClick={() => scrollToSection("faq")}
@@ -111,7 +111,7 @@ export function Navigation() {
                 onClick={() => scrollToSection("pricing")}
                 className="text-left text-sm text-foreground hover:text-primary hover:bg-muted transition-colors py-3 px-4 rounded-md"
               >
-                Pricing
+                What You Get
               </button>
               <button
                 onClick={() => scrollToSection("faq")}

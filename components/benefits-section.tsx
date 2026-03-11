@@ -18,22 +18,22 @@ import { useWhatsAppForm } from "@/components/whatsapp-form-context"
 const benefits = [
   {
     icon: IndianRupee,
-    title: "₹1,000 Deposit → ₹24,000 After Ranking",
-    description: "Pay just ₹1,000 to start. Remaining ₹24,000 only after your website ranks on Google!",
-    highlight: "Pay After Results",
+    title: "100% FREE for Vadodara",
+    description: "Get a professional website and complete SEO absolutely free! Exclusive offer for Vadodara businesses.",
+    highlight: "Completely FREE",
     color: "bg-green-500",
   },
   {
     icon: Calendar,
-    title: "Results in 30-45 Days",
-    description: "See your business climbing Google rankings within 30-45 days. We use the best strategies to deliver fast results.",
+    title: "Results in 30 Days",
+    description: "See your business climbing Google rankings within 30 days. We use the best strategies to deliver fast results.",
     highlight: "Fastest in Industry",
     color: "bg-blue-500",
   },
   {
     icon: ShieldCheck,
     title: "Professional Website Included",
-    description: "Get a modern, fast-loading website designed for your business. Included in the ₹25,000 package!",
+    description: "Get a modern, fast-loading website designed for your business. Included FREE in the package!",
     highlight: "Website Included",
     color: "bg-purple-500",
   },

@@ -33,8 +33,8 @@ const results = [
 ]
 
 const stats = [
-  { number: "₹24.9K", label: "One-Time", icon: Target },
-  { number: "30-45", label: "Days to Rank", icon: TrendingUp },
+  { number: "FREE", label: "Zero Cost", icon: Target },
+  { number: "30", label: "Days to Rank", icon: TrendingUp },
   { number: "Website", label: "+ SEO", icon: Award },
   { number: "Google", label: "Ranking", icon: BarChart3 },
 ]
@@ -49,7 +49,7 @@ export function ResultsSection() {
             See What We've Achieved for Our Clients
           </h2>
           <p className="text-lg text-white/80 leading-relaxed">
-            Real businesses. Real rankings. Real results in 30-45 days.
+            Real businesses. Real rankings. Real results in 30 days.
           </p>
         </div>
 
@@ -108,10 +108,10 @@ export function ResultsSection() {
         {/* Bottom Note */}
         <div className="mt-12 text-center">
           <p className="text-white/90 text-lg">
-            <span className="text-accent font-bold">Your business could be next.</span> Pay ₹1,000 deposit, ₹24,000 after ranking!
+            <span className="text-accent font-bold">Your business could be next.</span> Get FREE website + SEO for your Vadodara business!
           </p>
           <p className="text-white/70 text-base mt-2">
-            No monthly fees. Rank on Google in your city!
+            No charges. Rank on Google in Vadodara!
           </p>
         </div>
       </div>

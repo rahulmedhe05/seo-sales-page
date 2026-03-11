@@ -48,25 +48,24 @@ export function HeroSection() {
 • *Website:* ${formData.websiteUrl || "No website"}
 
 ―――――――――――――
-📦 *WHAT YOU WILL GET:*
+📦 *WHAT YOU WILL GET (FREE):*
 ―――――――――――――
 ✅ Professional Website Design — Modern, fast-loading website
-✅ Complete SEO Optimization — Rank on Google in your city
+✅ Complete SEO Optimization — Rank on Google in Vadodara
 ✅ Get Consistent Leads from Google — Fully optimized
 ✅ AI Search Ready — ChatGPT, Gemini visibility
 ✅ Beat Top 5 Competitors — Guaranteed ranking
 
-💰 *PRICING:* ₹1,000 Deposit → ₹24,000 After Ranking (Total: ₹25,000)
+🎁 *100% FREE for Vadodara Businesses!*
 
 ―――――――――――――
 📋 *TERMS & CONDITIONS:*
 ―――――――――――――
-1. ₹1,000 deposit to start (booking fee)
-2. ₹24,000 paid only AFTER ranking on Google
-3. Delivery timeline: 30-45 working days
-4. 1 round of revision included
-5. Domain charges not included
-6. Free hosting & maintenance for 1 year, then ₹5,000/year
+1. Available for Vadodara-based businesses only
+2. Get ranked in 30 days
+3. 1 round of revision included
+4. Domain charges not included
+5. Free hosting & maintenance
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -94,27 +93,27 @@ _Sent via GoPlnr Website_
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 font-bold">
               <Zap className="w-5 h-5" />
-              <span className="text-sm">💼 ₹1,000 Deposit → ₹24,000 After Ranking!</span>
+              <span className="text-sm">🎁 100% FREE for Vadodara Businesses!</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              Get <span className="text-accent">Website + SEO</span>
+              Get <span className="text-accent">FREE Website + SEO</span>
               <br />
-              <span className="text-2xl sm:text-3xl md:text-4xl">₹1,000 Deposit → ₹24,000 After Ranking!</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl">For Vadodara Businesses!</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              <span className="text-accent font-bold text-2xl md:text-3xl">Pay After Results!</span> We build your website and rank your business on Google.
-              <span className="font-bold"> Pay ₹1,000 now, ₹24,000 only after ranking! </span>
-              <span className="bg-accent px-2 py-1 rounded font-bold">No Risk!</span>
+              <span className="text-accent font-bold text-2xl md:text-3xl">Completely FREE!</span> We build your website and rank your business on Google.
+              <span className="font-bold"> Professional website + complete SEO — at zero cost! </span>
+              <span className="bg-accent px-2 py-1 rounded font-bold">Vadodara Only!</span>
             </p>
 
             {/* Payment Structure - Main USP */}
             <div className="bg-accent/20 backdrop-blur-sm rounded-xl p-5 border-2 border-accent">
               <h3 className="text-xl font-bold mb-4 text-center text-accent">
-                💼 WHAT YOU GET FOR ₹25,000 (₹1K + ₹24K)
+                🎁 WHAT YOU GET — 100% FREE
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
@@ -140,15 +139,15 @@ _Sent via GoPlnr Website_
                 </div>
               </div>
               <div className="mt-4 text-center bg-yellow-400 rounded-lg p-2">
-                <p className="font-bold text-gray-900">⚡ One-Time Payment — No Monthly Fees!</p>
+                <p className="font-bold text-gray-900">⚡ 100% FREE — No Charges, No Hidden Fees!</p>
               </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-4">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-accent">₹24.9K</div>
-                <div className="text-sm text-white/70">One-Time</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">FREE</div>
+                <div className="text-sm text-white/70">Zero Cost</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-accent">Website</div>
@@ -223,9 +222,9 @@ _Sent via GoPlnr Website_
                 <div className="flex items-start gap-2">
                   <div className="text-2xl">💼</div>
                   <div>
-                    <p className="text-accent text-sm font-bold">WEBSITE + SEO PACKAGE</p>
+                    <p className="text-accent text-sm font-bold">FREE WEBSITE + SEO</p>
                     <p className="text-foreground text-xs mt-1">
-                      Complete website + SEO to rank on Google. One-time payment only!
+                      Complete website + SEO to rank on Google. 100% FREE for Vadodara!
                     </p>
                   </div>
                 </div>
@@ -237,18 +236,18 @@ _Sent via GoPlnr Website_
                   Get Started Today
                 </div>
                 <h3 className="text-lg font-bold text-foreground">
-                  🚀 ₹1,000 Deposit → ₹24,000 After Ranking!
+                  🚀 FREE Website + SEO for Vadodara!
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Pay only after your website ranks on Google!
+                  Get your business ranked on Google at zero cost!
                 </p>
               </div>
 
-              {/* Price Display */}
+              {/* Free Banner */}
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
                 <p className="text-sm font-bold text-center text-green-800">🎯 Website + SEO Package</p>
-                <p className="text-xl font-bold text-center text-green-900 mt-1">₹1,000 Now → ₹24,000 After Ranking</p>
-                <p className="text-xs text-center text-green-700 mt-1">Total: ₹25,000 • Pay After Results!</p>
+                <p className="text-xl font-bold text-center text-green-900 mt-1">100% FREE</p>
+                <p className="text-xs text-center text-green-700 mt-1">For Vadodara Businesses Only!</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -357,11 +356,11 @@ _Sent via GoPlnr Website_
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 space-y-2">
                   <p className="text-xs font-bold text-amber-800">📋 Terms & Conditions:</p>
                   <ul className="text-xs text-amber-700 space-y-1 pl-2">
-                    <li>• 100% advance payment required (serious clients only)</li>
-                    <li>• Delivery timeline: 30-45 working days</li>
+                    <li>• Available for Vadodara-based businesses only</li>
+                    <li>• Get ranked in 30 days</li>
                     <li>• 1 round of revision included</li>
                     <li>• Domain charges not included</li>
-                    <li>• Free hosting & maintenance for 1 year, then ₹5,000/year</li>
+                    <li>• Free hosting & maintenance</li>
                   </ul>
                   <div className="flex items-center space-x-2 pt-2 border-t border-amber-200">
                     <Checkbox 
@@ -385,11 +384,11 @@ _Sent via GoPlnr Website_
                   disabled={!agreedToTerms}
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Start with ₹1,000 Deposit →
+                  Get Started — It's FREE →
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground">
-                  💼 Pay ₹24,000 only after ranking on Google!
+                  🎁 100% FREE for Vadodara businesses!
                 </p>
               </form>
             </div>
