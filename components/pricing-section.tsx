@@ -136,14 +136,10 @@ export function PricingSection() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-bold">3.</span>
-                <span><strong>Domain</strong> — Domain registration charges are not included.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="font-bold">4.</span>
                 <span><strong>Revisions</strong> — 1 round of revision included in the free package.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold">5.</span>
+                <span className="font-bold">4.</span>
                 <span><strong>Hosting</strong> — Free hosting & maintenance included.</span>
               </li>
             </ul>

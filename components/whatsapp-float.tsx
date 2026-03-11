@@ -68,8 +68,7 @@ export function WhatsAppFloat() {
 1. Available for Vadodara-based businesses only
 2. Get ranked in 30 days
 3. 1 round of revision included
-4. Domain charges not included
-5. Free hosting & maintenance
+4. Free hosting & maintenance
 
 ✅ *I have read and agreed to the Terms & Conditions*
 
@@ -227,7 +226,6 @@ _Sent via GoPlnr Website_
                 <li>• Available for Vadodara-based businesses only</li>
                 <li>• Get ranked in 30 days</li>
                 <li>• 1 round of revision included</li>
-                <li>• Domain charges not included</li>
                 <li>• Free hosting & maintenance</li>
               </ul>
               <div className="flex items-center space-x-2 pt-2 border-t border-amber-200">
